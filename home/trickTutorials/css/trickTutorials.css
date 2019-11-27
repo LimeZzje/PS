@@ -1,0 +1,17 @@
+.card {
+    max-width: 20%;
+    background-color: navajowhite;
+}
+
+.card-group{
+    float: none;
+}
+
+#wrapper {
+    display: block;
+    margin: auto;
+}
+
+.card, h4{
+    font-size: 110%;
+}
