@@ -210,7 +210,9 @@ top: 40%;
   font-size: 2rem;
   padding: .7rem;
 }
-
+    .carouselPic{
+     background-size: 50%;   
+    }
 }
 
 
@@ -263,6 +265,15 @@ figure {
   height: 25%;
   width: 25%;
 }
+
+
+
+.card{
+height: 50%;
+width: 50%;
+margin: auto;
+}
+
 
 
 /*
