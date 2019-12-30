@@ -1,5 +1,7 @@
-#treeview {
-	height: 400px;
+#trickview, #linkview {
+   color: white;
+   margin: right;
+
 }
 
 .options {
@@ -9,12 +11,14 @@
     right: 0;
     width: 260px;
     top: 0;
-    background-color: #f5f5f5;
+    background-color: white;
+    
 }
 
 .caption {
     font-size: 18px;
     font-weight: 500;
+    
 }
 
 .option {
@@ -27,4 +31,5 @@
     max-width: 350px;
     width: 100%;
     margin-top: 5px;
+    
 }
