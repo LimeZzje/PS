@@ -166,6 +166,10 @@ var tricks = [{
                     id: "1_2_32",
                     text: "Baktap",
                     name: "Baktap",
+                }, {
+                    id: "1_3_5",
+                    text: "Shadow",
+                    name: "Shadow",
                 },
             ]
 
@@ -199,10 +203,6 @@ var tricks = [{
                     name: "Ringaround",
                 },
                 {
-                    id: "1_3_5",
-                    text: "Shadow",
-                    name: "Shadow",
-                }, {
                     id: "1_3_6",
                     text: "Twisted Sonic Bust",
                     name: "Twisted+Sonic+Bust",
@@ -328,6 +328,11 @@ var tricks = [{
                     text: "Neobakfall",
                     name: "Neobakfall",
                 },
+                {
+                    id: "1_4_14",
+                    text: "Raimo Backaround Variations (iSuKps)",
+                    name: "raimo bak variations demo",
+                },
             ]
         }, {
             id: "1_5",
@@ -383,109 +388,145 @@ var tricks = [{
                 },
 
             ]
-        }, {
+        }, 
+        {
             id: "1_6",
+            text: "Super Expert",
+            items: [{
+                id: "1_6_1",
+                    text: "Fc Square Pass",
+                    name: "Fc+Square+Pass",
+                },
+                {
+                    id: "1_6_2",
+                        text: "FL Ta ~ Spiderspin Cont",
+                        name: "isukps+[fl ta - spiderspin]+cont",
+                    },
+                    {
+                        id: "1_6_3",
+                            text: "FL Ta ~ Palmspin Cont",
+                            name: "isukps+[fl ta ~ palmspin]+cont",
+                        },
+                        {
+                            id: "1_6_4",
+                            text: "FL Indexaround ~ Spiderspin Cont",
+                            name: "[fl ia ~ ss]+cont+iSukps",
+                            },
+                            {
+                                id: "1_6_5",
+                                text: "Pun New Cont",
+                                name: "Pen+spinning+tutorial+pun+new+trick+PooPooMan",
+                                },
+                                {
+                                    id: "1_6_6",
+                                    text: "Flush Sonic Variations (iSuKps)",
+                                    name: "flush sonic variations demo",
+                                    },
+            ]
+        }, 
+        { 
+            id: "1_7",
             text: "Weirdo",
             items: [{
-                    id: "1_6_1",
+                    id: "1_7_1",
                     text: "Air Clap",
                     name: "Air+Clap",
                 },
                 {
-                    id: "1_6_2",
+                    id: "1_7_2",
                     text: "Copper Stall",
                     name: "Copper+Stall",
                 },
                 {
-                    id: "1_6_3",
+                    id: "1_7_3",
                     text: "Counter Indexaoround Reverse",
                     name: "Counter+Indexaround+Reverse+Freeman",
                 },
                 {
-                    id: "1_6_4",
+                    id: "1_7_4",
                     text: "Swing and Inverse Swing",
                     name: "Swing+i+Inverse+Swing",
                 },
                 {
-                    id: "1_6_5",
+                    id: "1_7_5",
                     text: "Finger Stall",
                     name: "Finger+Stall",
                 },
 
                 {
-                    id: "1_6_6",
+                    id: "1_7_6",
                     text: "Bakflip",
                     name: "Bakflip+Freeman",
                 },
                 {
-                    id: "1_6_7",
+                    id: "1_7_7",
                     text: "Two Finger Twirl",
                     name: "Two+Finger+Twirl+Freeman",
                 },
                 {
-                    id: "1_6_8",
+                    id: "1_7_8",
                     text: "F*ck You",
                     name: "Fuck+You",
                 },
                 {
-                    id: "1_6_9",
+                    id: "1_7_9",
                     text: "Helicopter",
                     name: "Helicopter+Freeman",
                 },
                 {
-                    id: "1_6_10",
+                    id: "1_7_10",
                     text: "Inverse Baktap",
                     name: "Inverse+Baktap+Freeman",
                 },
                 {
-                    id: "1_6_11",
+                    id: "1_7_11",
                     text: "Levitator",
                     name: "Levitator+Freeman",
                 },
                 {
-                    id: "1_6_12",
+                    id: "1_7_12",
                     text: "Dual Pass",
                     name: "Dual+Pass+Freeman",
                 },
                 {
-                    id: "1_6_13",
+                    id: "1_7_13",
                     text: "Seasick",
                     name: "Seasick+Freeman",
                 },
                 {
-                    id: "1_6_14",
+                    id: "1_7_14",
                     text: "Cobra Bite",
                     name: "Cobra+Bite+Freeman",
                 },
                 {
-                    id: "1_6_15",
+                    id: "1_7_15",
                     text: "Kamehameha",
                     name: "Kamehameha+Freeman",
                 },
                 {
-                    id: "1_6_16",
+                    id: "1_7_16",
                     text: "P-rail",
                     name: "P-rail+Freeman",
                 },
                 {
-                    id: "1_6_17",
+                    id: "1_7_17",
                     text: "Thumb Snap",
                     name: "Thumb+Snap+Freeman",
                 },
                 {
-                    id: "1_6_18",
+                    id: "1_7_18",
                     text: "Backhand Bounce",
                     name: "Backhand+Bounce",
 
                 },
                 {
-                    id: "1_6_19",
+                    id: "1_7_19",
                     text: "Backhand Tracer",
                     name: "Backhand Tracer",
 
                 },
                 {
-                    id: "1_6_20",
+                    id: "1_7_20",
                     text: "Arm Roll",
                     name: "Arm+Roll",
 

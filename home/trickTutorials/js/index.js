@@ -28,7 +28,7 @@ $(function(){
         onItemClick:function(e) {
             var item = e.itemData;
             if(item.name){
-                window.open("https://www.youtube.com/results?search_query=" + item.name + "+Penspinning+Tutorial")
+                window.open("https://www.youtube.com/results?search_query=" + item.name )
             }
         }
     }).dxTreeView("instance");

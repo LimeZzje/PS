@@ -383,109 +383,151 @@ var linkings = [{
                 },
 
             ]
-        }, {
+        }, 
+        {
             id: "1_6",
+            text: "Super Expert",
+            items: [{
+                id: "1_6_1",
+                    text: "iSuKps minicombo playlist",
+                    name: "iSuKps minicombo playlist",
+                },
+                {
+                    id: "1_6_2",
+                        text: "iSuKps Grimoire Chapter 1-4",
+                        name: "i.suk's grimoire c",
+                    },
+                    {
+                        id: "1_6_3",
+                            text: "iSuKps Annoying Linkage Vol1",
+                            name: "iSuKps annoying linkage vol 1",
+                        },
+                        {
+                            id: "1_6_4",
+                                text: "iSuKps minicombo playlist",
+                                name: "iSuKps minicombo playlist",
+                            },
+                            {
+                                id: "1_6_5",
+                                    text: "iSuKps Linkages Demonstration 1 & 2",
+                                    name: "iSuKps Linkages Demonstration 1 2 ",
+                                },
+                                {
+                                    id: "1_6_6",
+                                        text: "iSuKps minicombo playlist",
+                                        name: "iSuKps minicombo playlist",
+                                    },
+                                    {
+                                        id: "1_6_7",
+                                            text: "iSuKps minicombo playlist",
+                                            name: "iSuKps minicombo playlist",
+                                        },
+                
+            ]
+        }, 
+        {
+            id: "1_7",
             text: "Weirdo",
             items: [{
-                    id: "1_6_1",
+                    id: "1_7_1",
                     text: "Air Clap",
                     name: "Air+Clap",
                 },
                 {
-                    id: "1_6_2",
+                    id: "1_7_2",
                     text: "Copper Stall",
                     name: "Copper+Stall",
                 },
                 {
-                    id: "1_6_3",
+                    id: "1_7_3",
                     text: "Counter Indexaoround Reverse",
                     name: "Counter+Indexaround+Reverse+Freeman",
                 },
                 {
-                    id: "1_6_4",
+                    id: "1_7_4",
                     text: "Swing and Inverse Swing",
                     name: "Swing+i+Inverse+Swing",
                 },
                 {
-                    id: "1_6_5",
+                    id: "1_7_5",
                     text: "Finger Stall",
                     name: "Finger+Stall",
                 },
 
                 {
-                    id: "1_6_6",
+                    id: "1_7_6",
                     text: "Bakflip",
                     name: "Bakflip+Freeman",
                 },
                 {
-                    id: "1_6_7",
+                    id: "1_7_7",
                     text: "Two Finger Twirl",
                     name: "Two+Finger+Twirl+Freeman",
                 },
                 {
-                    id: "1_6_8",
+                    id: "1_7_8",
                     text: "F*ck You",
                     name: "Fuck+You",
                 },
                 {
-                    id: "1_6_9",
+                    id: "1_7_9",
                     text: "Helicopter",
                     name: "Helicopter+Freeman",
                 },
                 {
-                    id: "1_6_10",
+                    id: "1_7_10",
                     text: "Inverse Baktap",
                     name: "Inverse+Baktap+Freeman",
                 },
                 {
-                    id: "1_6_11",
+                    id: "1_7_11",
                     text: "Levitator",
                     name: "Levitator+Freeman",
                 },
                 {
-                    id: "1_6_12",
+                    id: "1_7_12",
                     text: "Dual Pass",
                     name: "Dual+Pass+Freeman",
                 },
                 {
-                    id: "1_6_13",
+                    id: "1_7_13",
                     text: "Seasick",
                     name: "Seasick+Freeman",
                 },
                 {
-                    id: "1_6_14",
+                    id: "1_7_14",
                     text: "Cobra Bite",
                     name: "Cobra+Bite+Freeman",
                 },
                 {
-                    id: "1_6_15",
+                    id: "1_7_15",
                     text: "Kamehameha",
                     name: "Kamehameha+Freeman",
                 },
                 {
-                    id: "1_6_16",
+                    id: "1_7_16",
                     text: "P-rail",
                     name: "P-rail+Freeman",
                 },
                 {
-                    id: "1_6_17",
+                    id: "1_7_17",
                     text: "Thumb Snap",
                     name: "Thumb+Snap+Freeman",
                 },
                 {
-                    id: "1_6_18",
+                    id: "1_7_18",
                     text: "Backhand Bounce",
                     name: "Backhand+Bounce",
 
                 },
                 {
-                    id: "1_6_19",
+                    id: "1_7_19",
                     text: "Backhand Tracer",
                     name: "Backhand Tracer",
 
                 },
                 {
-                    id: "1_6_20",
+                    id: "1_7_20",
                     text: "Arm Roll",
                     name: "Arm+Roll",
 
