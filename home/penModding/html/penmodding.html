@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Trick Tutorials</title>
+	<title>Penmodding</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -30,6 +30,47 @@
 </head>
 
 <body>
+  <div class="wrapper">
+<!-- Sidebar -->
+<nav id="sidebar">
+  
+    <div class="sidebar-header">
+        <h3>Categories of Penmods</h3>
+    </div>
+
+    <div class="input-group md-form form-sm form-2 pl-0">
+      <input id="searchBar" class="form-control my-0 py-1 red-border" type="text" placeholder="Search for a Penmod" aria-label="Search" onkeyup="searchMod()">
+      <div class="input-group-append">
+        <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+            aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <ul class="list-unstyled components">
+        <p>Choose a Category</p>
+        <li >
+            <a  id="doubleCap sc write" onclick="filterDC()" >Double Cap</a>
+          
+        </li>
+        <li>
+            <a   id="doubleCap dc write" onclick="filterSC()">Single Cap</a>
+        </li>
+        <li>
+            <a   id="doubleCap dc sc" onclick="filterWrite()">Writeable</a>
+          
+        </li>
+        <li>
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+    </ul>
+
+    </nav>
+    <!-- Page Content -->
+    <div id="content">
+        
 <!-- import navbar -->
 <div id="navbar">
 
@@ -39,9 +80,11 @@
 $(function(){
   $("#navbar").load("../../global/fragments/navbar.html");
 });
-
 </script>
+
    <div id="content">
+
+  
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -51,6 +94,8 @@ $(function(){
                 <span>Toggle Sidebar</span>
             </button>
         </div>
+
+        
     </nav>
 </div>
 <!-- end import navbar -->
@@ -70,185 +115,23 @@ $(function(){
   </div>
 </div>
 
-<div class="input-group md-form form-sm form-2 pl-0">
-  <input id="searchBar" class="form-control my-0 py-1 red-border" type="text" placeholder="Search for a Penmod" aria-label="Search" onkeyup="searchMod()">
-  <div class="input-group-append">
-    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
-        aria-hidden="true"></i></span>
-  </div>
-</div>
+
 
 <div class="wrapper">
 
 
-  
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Categories of Penmods</h3>
-        </div>
-
-        <ul class="list-unstyled components">
-            <p>Choose a Category</p>
-            <li >
-                <a  id="doubleCap sc write" onclick="filterDC()" >Double Cap</a>
-              
-            </li>
-            <li>
-                <a   id="doubleCap dc write" onclick="filterSC()">Single Cap</a>
-            </li>
-            <li>
-                <a   id="doubleCap dc sc" onclick="filterWrite()">Writeable</a>
-              
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-
-    </nav>
-    <!-- Page Content -->
- 
-
-
-<!--End Sidebar-->
-
 <!-- Cards -->
 <div id="cardWrapper">
-<div class="card-group">
-    <a href="https://penmodding.pm/archives/5895">
-    <div class="card">
-        
-        <div class="card-body">
-            
-          <p class="modname dc card-text" value="dc" >Eban Memory DC</p>
-        </div>
-    
-        <img src="../img/eban.jpg" alt="Card image">
-        <div class="card-body">
-          <p class="card-text">Featured picture : credit goes to Eban. – Name : Eban Memory DC – Creator : Unknown, this mod was gifted to Eban by another spinner – Length : 21 cm – Weight : 12 g – Insert : No – Weblink : / – Difficulty : Easy</p>
-        </div>
-    </a>
-      </div>
-      
-    <div class="card">
-        <a href="https://penmodding.pm/archives/5832">
-        <div class="card-body">
-            <p class="modname dc card-text" value="dc">Colors Mod</p class="modname">
-          </div>
-          <img src="../img/colors_mod.jpg" alt="Card image">
-          <div class="card-body">
-            <p class="card-text">Featured picture : credit goes to Ponkotu – Name : Colors mod – Creator : Slofis – Length : 19.5-20cm – Weight : 15-16g – Insert : No – Weblink : >Ponkotu blog< – Difficulty :  Easy – Stuff </p>
-        </a> 
-        </div>
-        
-    </div>
-    <div class="card">
-        <a href="https://penmodding.pm/archives/5877">
 
-        <div class="card-body">
-            <p class="modname dc card-text" value="dc">Everchix Comssa</p>
-          </div>
-          <img src="../img/everchix_comssa.jpg" alt="Card image">
-          <div class="card-body">
-            <p class="card-text">Featured picture : credit goes to Mina. – Name : Everchix Comssa – Creator : Everchix – Length : 20.5 cm – Weight : 19 g – Insert : No – Difficulty : Medium</p>
-          </div>
-        </a>
-    </div>
-    <div class="card">
-        <a href="https://penmodding.pm/archives/5880">
-        <div class="card-body">
-            <p class="modname dc card-text" >Orbia Fitline</p>
-          </div>
-          <img src="../img/Orbia_fitline.jpg" alt="Card image">
-          <div class="card-body">
-            <p class="card-text">Featured picture : credit goes to Mina. – Name : Oribia Fitline – Creator : Oribia – Length : 21.5 cm – Weight : 21 g – Insert : No – Difficulty : Medium</p>
-          </div>
+<div id="cards">
 
-        </a>
-    </div>
-    <div class="card">
-        <a href="https://penmodding.pm/archives/5855">
-        <div class="card-body">
-            <p class="modname dc card-text"  >Kacogreen Grip Aviaire (KG GA)</p>
-          </div>
-          <img src="../img/kacogreen_grip_aviaire.jpg" alt="Card image">
-          <div class="card-body">
-            <p class="card-text">Featured picture : credit goes to Mina. – Name : KakoGreen Grip Aviaire (KG GA) – Creator : Megas – Length : 22 cm – Weight : 18 g – Insert : No – Difficulty : Easy</p>
-          </div>
-
-        </a>
-    </div>
-     
-    <div class="card-group">
-        <a href="https://penmodding.pm/archives/5800">
-        <div class="card">
-            
-            <div class="card-body">
-                
-              <p class="modname dc card-text" >Vore-Tex Emboss</p>
-            </div>
-        
-            <img src="../img/vore-tex_emboss.png" alt="Card image">
-            <div class="card-body">
-              <p class="card-text">Featured picture : credit goes to Vôre-Tèx – Name : Vôre-Tèx Emboss – Creator : Vôre-Tèx – Length : 20.5cm – Weight : ~16g – Insert : No – Weblink : >Vôre-Tèx blog< – Difficulty :  Medium </p>
-            </div>
-        </a>
-          </div>
-          
-        <div class="card">
-            <a href="https://penmodding.pm/archives/5763">
-            <div class="card-body">
-                <p  class="modname dc card-text" >P4P3RON Mod</p>
-              </div>
-              <img src="../img/p4p3ron_mod.jpg" alt="Card image">
-              <div class="card-body">
-                <p class="card-text">Featured picture : credit goes to Aceron – Name : P4P3RON mod – Creator : Aceron – Length : 20cm – Weight : 11g – Outsert : Yes – Weblink : FPSB V4 – Difficulty :  Easy </p>
-            </a> 
-            </div>
-            
-        </div>
-        <div class="card">
-            <a href="https://penmodding.pm/archives/5677">
-    
-            <div class="card-body">
-                <p class="modname dc card-text" >MENOWA* BT VGG</p class="modname">
-              </div>
-              <img src="../img/Menowa_BT_VGG.jpg" alt="Card image">
-              <div class="card-body">
-                <p class="card-text">Featured picture : credit goes to Menowa* – Name : Menowa* BT VGG | note : Menowa* calls it the fake VGG charcoal – Creator : Menowa* – Length : 22cm – Weight : Heavy (22g?) – Insert : No – Weblink : Ponkotu blog – Difficulty :  Easy</p>
-              </div>
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://penmodding.pm/archives/5843">
-            <div class="card-body">
-                <p  class="modname dc card-text" >KAGAMI DC</p>
-              </div>
-              <img src="../img/kagami_dc.jpg" alt="Card image">
-              <div class="card-body">
-                <p class="card-text">Featured picture : credit goes to Mina. – Name : Kagami DC – Creator : Kagami – Length : 21cm – Weight : 14 g – Insert : No – Difficulty : Medium</p>
-              </div>
-    
-            </a>
-        </div>
-        <div class="card">
-            <a href="https://penmodding.pm/archives/5613">
-            <div class="card-body">
-                <p class="modname dc card-text" >AKAI DC</p class="modname">
-              </div>
-              <img src="../img/akai_dc.jpg" alt="Card image">
-              <div class="card-body">
-                <p class="card-text">Featured picture : credit goes to Mina. – Name : Akai DC – Creator : Akai – Length : 22.5 cm – Weight : 13 g – Insert : No – Difficulty : Easy</p>
-              </div>
-    
-            </a>
-        </div>   
-  </div>
 </div>
+
+<script>
+$(function(){
+  $("#cards").load("listOfDCMods.html");
+});
+</script>
 
 
 <!-- import footer -->	
@@ -263,6 +146,11 @@ $(function(){
 </script>
 <!-- end import footer -->
 </div>
+    </div>
+</div>
+
+
+
 </body>
 
 </html>
