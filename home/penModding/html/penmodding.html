@@ -17,7 +17,7 @@
 
 <script src="../js/sidebar.js"></script>
 <script src="../js/filterMods.js"></script>
-
+<script src="../js/listOfMods.js"></script>
 
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -29,7 +29,7 @@
     
 </head>
 
-<body>
+<body onload="createCards()">
   <div class="wrapper">
 <!-- Sidebar -->
 <nav id="sidebar">
@@ -39,7 +39,7 @@
     </div>
 
     <div class="input-group md-form form-sm form-2 pl-0">
-      <input id="searchBar" class="form-control my-0 py-1 red-border" type="text" placeholder="Search for a Penmod" aria-label="Search" onkeyup="searchMod()">
+      <input id="searchBar" class="form-control my-0 py-1 red-border" type="text" placeholder="Search for a Penmod" aria-label="Search" onkeyup="searchMods()">
       <div class="input-group-append">
         <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
             aria-hidden="true"></i></span>
@@ -69,7 +69,7 @@
 
     </nav>
     <!-- Page Content -->
-    <div id="content">
+    <div id="content" >
         
 <!-- import navbar -->
 <div id="navbar">
@@ -115,9 +115,7 @@ $(function(){
   </div>
 </div>
 
-
-
-<div class="wrapper">
+<div class="wrapper" >
 
 
 <!-- Cards -->
@@ -127,11 +125,6 @@ $(function(){
 
 </div>
 
-<script>
-$(function(){
-  $("#cards").load("listOfDCMods.html");
-});
-</script>
 
 
 <!-- import footer -->	
