@@ -48,5 +48,27 @@ var penmods = '{"mods":[' +
 '{ "name":"Vore-Tex Emboss","link":"https://penmodding.pm/archives/5800","pic":"../img/vore-tex_emboss.png","text":"Featured picture : credit goes to Vôre-Tèx – Name : Vôre-Tèx Emboss – Creator : Vôre-Tèx – Length : 20.5cm – Weight : ~16g – Insert : No – Weblink : >Vôre-Tèx blog< – Difficulty :  Medium ", "type":"dc"},'+
 '{ "name":"P4P3RON Mod","link":"https://penmodding.pm/archives/5763","pic":"../img/p4p3ron_mod.jpg","text":"Featured picture : credit goes to Aceron – Name : P4P3RON mod – Creator : Aceron – Length : 20cm – Weight : 11g – Outsert : Yes – Weblink : FPSB V4 – Difficulty :  Easy", "type":"dc"},'+
 '{ "name":"MENOWA* BT VGG","link":"https://penmodding.pm/archives/5677","pic":"../img/Menowa_BT_VGG.jpg","text":"Featured picture : credit goes to Menowa* – Name : Menowa* BT VGG | note : Menowa* calls it the fake VGG charcoal – Creator : Menowa* – Length : 22cm – Weight : Heavy (22g?) – Insert : No – Weblink : Ponkotu blog – Difficulty :  Easy", "type":"dc"},'+
+'{ "name":"Namemory","link":"https://penmodding.pm/archives/2700","pic":"../img/namemory.jpg","text":"Name :. Namemory DC – Creator :. iColor – Length : ~20 cm – Weight : Medium –  Outsert : If you want. – Link : Namemory DC (UPSB) – Difficulty : Easy", "type":"dc"},'+
+'{ "name":"Majora CYL","link":"https://penmodding.pm/archives/2654","pic":"../img/majora.jpg","text":" Name : Majora Cyl – Creator : Majora – Length : 23 cm – Weight : 22 g – Outsert : No – Link : Majora CYL (GPC) – Difficulty : Easy ", "type":"dc"},'+
+'{ "name":"Stek Body","link":"https://penmodding.pm/archives/1110","pic":"../img/stek.png","text":"Ceci est une technique de Tek. Ce n’est pas réelement un mod mais plutôt une technique de moddage permettant de “colorer” un peu plus le mod. Cette technique peut être appliquable à : – Com.Ssa – Bellcolor Mod – BusterCYL – Tout les autres mods qui ont pour corps un", "type":"dc"},'+
+'{ "name":"CYL 83 Mod","link":"https://penmodding.pm/archives/1108","pic":"../img/cyl 83.jpg","text":"Featured picure : credit goes to olllDumPlllo.   – Name : Cyl 83 Mod ( Tek’s Super Tip Mod ) – Creator : olllDumPlllo – Length : 21 cm – Weight : Medium – Outsert : No – Link : Cyl 83 Mod ( ThaiSpinner ) – Difficulty : Easy", "type":"dc"},'+
+'{ "name":"Pirat KS aka Stuhl mod","link":"https://penmodding.pm/archives/2584","pic":"../img/stuhl.jpg","text":"Name : Pirat KS – Creator : Stuhl – Length : Long – Weight : Middle –  Outsert : No – Link : / – Difficulty :  Easy-Medium", "type":"dc"},'+
+'{ "name":"Hyper Sign","link":"https://penmodding.pm/archives/2483","pic":"../img/hyper.jpg","text":"Featured picture : credit goes to Nix – Name : Hyper Sign – Creator : Nix – Length : Medium – Weight : Heavy – Insert : Yes – Lien : Hyper Sign (FPSB) – Difficulty : Facile", "type":"dc"},'+
+'{ "name":"Buster CYL Retractable","link":"https://penmodding.pm/archives/1965","pic":"../img/busterRetr.png","text":"Name : Buster CYL retractable – Creator : Vôre-Tèx – Length : As a buser cyl normal. – Weight : 22 g – Outsert : No – Link : BCYL retractable (upsb) – Difficulty : A bit hard ", "type":"dc"},'+
+'{ "name":"Clear Waterfall","link":"https://penmodding.pm/archives/1945","pic":"../img/clearWater.jpg","text":"Nom : Clear Waterfall Mod – Créateur : ? – Taille : 21cm – Poids : 13g – Insert / Ouster  : Oui – Lien : / – Moddage : Facile", "type":"dc"},'+
+'{ "name":"Sunrising Spirit","link":"https://penmodding.pm/archives/1905","pic":"../img/sunrising.jpg","text":"Name : Sunrising Spirit – Creator : Neptune – Lenght : 21,3cm – Weigth : 18,6g – Insert : Yes – Link : Sunrising Spirit (FPSB) – Modding : Hard", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+
+'{ "name":"","link":"","pic":"","text":"", "type":"dc"},'+
+
 
 '{ "name":"Eban Memory DC","link":"https://penmodding.pm/archives/5895","pic":"../img/eban.jpg","text":"Featured picture : credit goes to Eban. – Name : Eban Memory DC – Creator : Unknown, this mod was gifted to Eban by another spinner – Length : 21 cm – Weight : 12 g – Insert : No – Weblink : / – Difficulty : Easy"}]}';

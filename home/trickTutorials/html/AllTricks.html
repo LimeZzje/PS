@@ -23,7 +23,7 @@
     <script src="https://cdn3.devexpress.com/jslib/19.2.5/js/dx.all.js"></script>
     <script src="../js/tricks.js"></script>
     <script src="../js/linkings.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/allTricks.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/tree.css" />
     <link rel="stylesheet" type="text/css" href="../css/allTricks.css" />
 
@@ -45,14 +45,24 @@
     <div class="row welcome text-center">
         <div class="col-12">
             <h1 class="display-4">Gotta Learn 'Em All!</h1>
-            <hr>
+            
+            
+              <button id="disclaimerButton" class="button btn btn-danger" onclick="handleDisclaimerClick()">Please Click Me To Read The Disclaimer!</button>
+              <ul id="disclaimerUl" class="list-group list-group-flush">
+                <li class="list-group-item lead "><p><span class="glyphicon glyphicon-warning-sign"></span></p>This list is entierly subjective but it should give you an idea of what tricks to learn in which order</li>
+                <li class="list-group-item lead">Only once you learned a trick in all slots, reverse, palm down/palm normal (if possible), you have mastered it
+                  Learning tricks in reverse and in all slots is as important as learning the trick normal in only one slot!!! Make sure you dont miss out on that</li>
+                <li class="list-group-item lead">For example: You just learned "Sonic 23-12": now try to learn "Sonic reverse 12-23", "Sonic 34-23", "Sonic Reverse 23-34" (recommended order). This works for almost all tricks.</li>
+                <li class="list-group-item lead">"Sonic 23-12"?! - The numbers mason, what do they mean?! (Guideline on notation for tricks)</p></li>
+                <li class="list-group-item lead"></li>
+              </ul> 
+              </div>
+     
+              
+               
+       
             <div class="col-12">
-                <p class="lead">Here you can find a big collection of tricks ordered by difficulty.</p>
-                <p class="lead">Disclaimer: This list is entierly subjective but it should give you an idea of what tricks to learn in which order</p>
-                <p class="lead">Only once you learned a trick in all slots, reverse, palm down/palm normal (if possible), you have mastered it</p>
-                <p class="lead">Learning tricks in reverse and in all slots is as important as learning the trick normal in only one slot!!! Make sure you dont miss out on that</p>
-                <p class="lead">For example: You just learned "Sonic 23-12": now try to learn "Sonic reverse 12-23", "Sonic 34-23", "Sonic Reverse 23-34" (recommended order). This works for almost all tricks.  </p>
-                <p class="lead">"The numbers mason, what do they mean?!" (Guideline on notation for tricks)</p>
+               
             </div>
         </div>
     </div>

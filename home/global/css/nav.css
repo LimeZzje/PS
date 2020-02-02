@@ -15,3 +15,8 @@
 .nav-link {
   font-size: 1.1em !important;
 }
+
+body {
+  padding-top: 4rem;
+}
+
