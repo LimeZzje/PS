@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 #limepic{
   height: 25%;
@@ -20,3 +21,30 @@ body {
   padding-top: 4rem;
 }
 
+.navbar{
+  position: fixed;
+}
+
+.navbar-nav {
+  float: right;
+
+}
+
+nav.navbar {
+  justify-content: flex-end;
+}
+
+.dropdown.show,
+.dropdown-menu.show {
+  text-align: right;
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .dropdown-menu.show {
+    left: -8rem;
+  }
+}

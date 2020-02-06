@@ -1,1 +1,40 @@
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+#glyphicon{
+    width: 24px; 
+    height: 24px;
+}
+
+body{
+    margin-top: 2em;
+}
+
+.col img{
+    max-width: 100%;
+    height: auto;
+}
+
+.header{
+    text-align:center ;
+}
+
+.col .lead{
+    text-align: justify;
+}
+
+#notaionHr{
+    border-top: 2px solid #b4b4b4;
+    width: 20%;
+    margin-top: .3rem;
+    margin-bottom: 5rem;
+  }
+
+#notationWrapper{
+    width: 100%;
+    height: auto;
+}

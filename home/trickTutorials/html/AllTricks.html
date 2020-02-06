@@ -1,102 +1,111 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-    <title>All Tricks</title>
+  <title>All Tricks</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
 
-    <link rel="stylesheet" type="text/css" href="../../global/css/firstSteps.css" />
-    <link rel="stylesheet" type="text/css" href="../../global/css/footer.css" />
-    <link rel="stylesheet" type="text/css" href="../../global/css/nav.css" />
-    <link rel="stylesheet" type="text/css" href="../../global/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../../global/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="../../global/css/nav.css" />
+  <link rel="stylesheet" type="text/css" href="../../global/css/style.css" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
-<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.5/css/dx.light.css" />
-<link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.5/css/dx.common.css" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))
+  </script>
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.5/css/dx.light.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/19.2.5/css/dx.common.css" />
 
 
-    <script src="https://cdn3.devexpress.com/jslib/19.2.5/js/dx.all.js"></script>
-    <script src="../js/tricks.js"></script>
-    <script src="../js/linkings.js"></script>
-    <script src="../js/allTricks.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/tree.css" />
-    <link rel="stylesheet" type="text/css" href="../css/allTricks.css" />
+  <script src="https://cdn3.devexpress.com/jslib/19.2.5/js/dx.all.js"></script>
+  <script src="../js/tricks.js"></script>
+  <script src="../js/linkings.js"></script>
+  <script src="../js/allTricks.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/tree.css" />
+  <link rel="stylesheet" type="text/css" href="../css/allTricks.css" />
 
 
 </head>
+
 <body class="dx-viewport">
 
-   <!-- import navbar -->
-   <div id="navbar">
+  <!-- import navbar -->
+  <div id="navbar">
   </div>
   <script>
     $(function () {
       $("#navbar").load("../../global/fragments/navbar.html");
     });
-  </script> </script>
+  </script>
+  </script>
   <!-- end import navbar -->
 
   <div class="container-fluid padding">
     <div class="row welcome text-center">
-        <div class="col-12">
-            <h1 class="display-4">Gotta Learn 'Em All!</h1>
-            
-            
-              <button id="disclaimerButton" class="button btn btn-danger" onclick="handleDisclaimerClick()">Please Click Me To Read The Disclaimer!</button>
-              <ul id="disclaimerUl" class="list-group list-group-flush">
-                <li class="list-group-item lead "><p><span class="glyphicon glyphicon-warning-sign"></span></p>This list is entierly subjective but it should give you an idea of what tricks to learn in which order</li>
-                <li class="list-group-item lead">Only once you learned a trick in all slots, reverse, palm down/palm normal (if possible), you have mastered it
-                  Learning tricks in reverse and in all slots is as important as learning the trick normal in only one slot!!! Make sure you dont miss out on that</li>
-                <li class="list-group-item lead">For example: You just learned "Sonic 23-12": now try to learn "Sonic reverse 12-23", "Sonic 34-23", "Sonic Reverse 23-34" (recommended order). This works for almost all tricks.</li>
-                <li class="list-group-item lead">"Sonic 23-12"?! - The numbers mason, what do they mean?! (Guideline on notation for tricks)</p></li>
-                <li class="list-group-item lead"></li>
-              </ul> 
-              </div>
-     
-              
-               
-       
-            <div class="col-12">
-               
-            </div>
-        </div>
+      <div class="col-12">
+        <h1 class="display-4">Gotta Learn 'Em All!</h1>
+
+
+        <button id="disclaimerButton" class="button btn btn-danger" onclick="handleDisclaimerClick()">Please Click Me To
+          Read The Disclaimer!</button>
+        <ul id="disclaimerUl" class="list-group list-group-flush">
+          <li class="list-group-item lead ">
+            <p><span class="glyphicon glyphicon-warning-sign"></span></p>This list is entierly subjective but it should
+            give you an idea of what tricks to learn in which order
+          </li>
+          <li class="list-group-item lead">Only once you learned a trick in all slots, reverse, palm down/palm normal
+            (if possible), you have mastered it
+            Learning tricks in reverse and in all slots is as important as learning the trick normal in only one slot!!!
+            Make sure you dont miss out on that</li>
+          <li class="list-group-item lead">For example: You just learned "Sonic 23-12": now try to learn "Sonic reverse
+            12-23", "Sonic 34-23", "Sonic Reverse 23-34" (recommended order). This works for almost all tricks.</li>
+          <li class="list-group-item lead">"Sonic 23-12"?! - The numbers mason, what do they mean?! (Guideline on
+            notation for tricks)</p>
+          </li>
+          <li class="list-group-item lead"></li>
+        </ul>
+      </div>
+
+      <div class="col-12">
+      </div>
     </div>
-</div>
-
-<div class="d-flex text-white" id="trickWrapper">
-  <div class="p-2 flex-fill bg-secondary"><div class="container-fluid padding"> 
-    <div class="col-24" id="trickContainer">
-      <h1 class="display-4">Gotta Learn Some Tricks!</h1>
-  <div class="demo-container">
-      <div id="trickview"></div>
-     
+  </div>
   </div>
 
-</div>
-</div></div>
-  <div class="p-2 flex-fill bg-secondary"><div class="container-fluid padding"> 
-    <div class="col-24" id="linkContainer">
-      <h1 class="display-4">Gotta Learn Some Linkings!</h1>
-  <div class="demo-container">
-      <div id="linkview"></div>
-     
+  <div class="d-flex text-white" id="trickWrapper">
+    <div class="p-2 flex-fill bg-secondary">
+      <div class="container-fluid padding">
+        <div class="col-24" id="trickContainer">
+          <h1 class="display-4">Gotta Learn Some Tricks!</h1>
+          <div class="demo-container">
+            <div id="trickview"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="p-2 flex-fill bg-secondary">
+      <div class="container-fluid padding">
+        <div class="col-24" id="linkContainer">
+          <h1 class="display-4">Gotta Learn Some Linkings!</h1>
+          <div class="demo-container">
+            <div id="linkview"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
   </div>
-  
-  </div>
-  </div></div>
-</div>
 
-
-
-
-
-
-    <!-- import footer -->
+  <!-- import footer -->
   <div id="footer">
   </div>
   <script>
@@ -106,4 +115,5 @@
   </script>
   <!-- end import footer -->
 </body>
+
 </html>

@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-html, body{
 
+html, body{
+  height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  color: #222;
+  background-color: #1a1a1d;
+  color: white;
+}
+
+hr{
+  background-color: #4e4e50;
+}
+
+.cardlink{
+  text-decoration: none;
+  color: white;
+}
+
+.cardlink:hover{
+  text-decoration: none;
+  color: #950740;
+}
+
+.cardlink{
+  text-decoration: none;
+  color: #c3073f;
 }
 
 .navbar{
@@ -44,12 +65,12 @@ html, body{
 }
 
 .btn-primary{
-  background-color: #6648b1;
-  border: 1px solid #563d7c;
+  background-color: #1a1a1d;
+  border: 2px solid #6f2232;
 }
 .btn-primary:hover {
-  background-color: #563d7c;
-  border: 1px solid #563d7c;
+  background-color: #950740;
+  border: 2px solid #6f2232;
 }
 
 .jumbotron {

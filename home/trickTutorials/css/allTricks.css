@@ -13,7 +13,8 @@ padding-right: 10%;
 }
 
 .trickWrapper{
-margin:auto;
+  padding: 1rem;
+  flex: 1 0 50%;
 }
 
 .list-group-item{
@@ -26,9 +27,15 @@ margin:auto;
     font-size: 4em;
     padding: 2em;
   }
+
   }
 @media (max-width: 768px) {
   .carousel-caption {
 top: 45%;
 }
+
+.p-2{
+  flex: 1 0 100%;
+}
+
 }
