@@ -1,11 +1,11 @@
 footer{
-  background-color: #3f3f3f;
-  color: #d5d5d5;
+  background-color: #474b4f;
+  color: white;
   padding: 2rem;
 }
 
 hr.light{
-  border-top: 1px solid #d5d5d5;
+  border-top: 1px solid #61892f;
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
@@ -13,11 +13,11 @@ hr.light{
 }
 
 footer a{
-  color: #d5d5d5;
+  color: white;
 }
 
 hr.light-100{
-    border-top: 1px solid #d5d5d5;
+    border-top: 1px solid white;
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 1rem;

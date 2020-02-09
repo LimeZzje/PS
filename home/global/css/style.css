@@ -1,38 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
-html, body{
+html,
+body {
   height: 100%;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: #1a1a1d;
+  background-color: #222629;
   color: white;
 }
 
-hr{
+hr {
   background-color: #4e4e50;
 }
 
-.cardlink{
+.cardlink {
   text-decoration: none;
   color: white;
 }
 
-.cardlink:hover{
+.cardlink:hover {
   text-decoration: none;
-  color: #950740;
+  color: #61892f;
 }
 
-.cardlink{
+.cardlink {
   text-decoration: none;
-  color: #c3073f;
+  color: #86c232;
 }
 
-.navbar{
+.navbar {
   padding: .8rem;
 }
 
-.navbar-nav li{
+.navbar-nav li {
   padding-right: 20px;
 }
 
@@ -40,20 +41,20 @@ hr{
   font-size: 1.1em !important;
 }
 
-.carousel-inner img{
+.carousel-inner img {
   width: 100%;
   height: 100%;
 }
 
 .carousel-caption {
-  position: absolute; 
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-.carousel-caption h1{
+.carousel-caption h1 {
   font-size: 500%;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   text-shadow: 1px 1px 10px #000;
 }
 
@@ -64,13 +65,14 @@ hr{
   padding-bottom: 1rem;
 }
 
-.btn-primary{
-  background-color: #1a1a1d;
-  border: 2px solid #6f2232;
+.btn-primary {
+  background-color: #222629;
+  border: 2px solid #86c232;
 }
+
 .btn-primary:hover {
-  background-color: #950740;
-  border: 2px solid #6f2232;
+  background-color: #86c232;
+  border: 2px solid #86c232;
 }
 
 .jumbotron {
@@ -78,10 +80,11 @@ hr{
   border-radius: 0;
 }
 
-.padding{
+.padding {
   padding-bottom: 2rem;
 }
-.welcome{
+
+.welcome {
   width: 75%;
   margin: 0 auto;
   padding-top: 2rem;
@@ -97,14 +100,18 @@ hr{
 .fa-code {
   color: #e54d26
 }
+
 .fa-bold {
   color: #563d7c;
 }
+
 .fa-css3 {
   color: #2163af;
 }
 
-.fa-code, .fa-bold, .fa-css3{
+.fa-code,
+.fa-bold,
+.fa-css3 {
   font-size: 4em;
   margin: 1rem;
 }
@@ -115,50 +122,50 @@ hr{
 
 }
 
-.gif{
+.gif {
   max-width: 100%;
 }
 
-.social{
+.social {
   font-size: 4.5em;
   padding: 3rem;
 
 }
 
-.fa-youtube{
+.fa-youtube {
   color: #bb0000;
 }
 
-.fa-instagram{
+.fa-instagram {
   color: #517fa4;
 }
 
-.fa-youtube:hover, 
-.fa-instagram:hover{
+.fa-youtube:hover,
+.fa-instagram:hover {
   color: #d5d5d5;
 }
 
 
-footer{
+footer {
   background-color: #3f3f3f;
   color: #d5d5d5;
   padding: 2rem;
 }
 
-hr.light{
-  border-top: 1px solid #d5d5d5;
+hr.light {
+  border-top: 1px solid #86c232;
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem;
 
 }
 
-footer a{
+footer a {
   color: #d5d5d5;
 }
 
-hr.light-100{
-    border-top: 1px solid #d5d5d5;
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 1rem;
@@ -171,88 +178,96 @@ hr.light-100{
     font-size: 4em;
     padding: 2em;
   }
-  }
+}
+
 @media (max-width: 768px) {
   .carousel-caption {
-top: 45%;
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social {
+    font-size: 2.5rem;
+    padding: 1.2rem;
+  }
 }
 
-.carousel-caption h1{
-  font-size: 350%;
-}
-
-.carousel-caption h3 {
-  font-size: 140%;
-  font-weight: 400;
-  padding-bottom: .2rem;
-}
-
-.carousel-caption .btn{
-  font-size: 95%;
-  padding: 8px 14px;
-}
-
-.display-4{
-  font-size: 200%;
-}
-.social{
-  font-size: 2.5rem;
-  padding: 1.2rem;
-}
-}
 @media (max-width: 576px) {
-  
+
   .carousel-caption {
-top: 40%;
-}
+    top: 40%;
+  }
 
-.carousel-caption h1{
-  font-size: 250%;
-}
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
 
-.carousel-caption h3 {
-  font-size: 110%;
-  font-weight: 400;
-  padding-bottom: .2rem;
-}
-.carousel-caption .btn{
-  font-size: 90%;
-  padding: 4px 8px;
-}
+  .carousel-caption h3 {
+    font-size: 110%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
 
-.carouselindicators{
-  display: none;
-}
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
 
-.display-4{
-  font-size: 160%;
-}
-.social{
-  font-size: 2rem;
-  padding: .7rem;
-}
-    .carouselPic{
-     background-size: 50%;   
-    }
+  .carouselindicators {
+    display: none;
+  }
+
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social {
+    font-size: 2rem;
+    padding: .7rem;
+  }
+
+  .carouselPic {
+    background-size: 50%;
+  }
 }
 
 
 /*---Firefox Bug Fix --*/
 .carousel-item {
-  
+
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
 }
+
 /*--- Fixed Background Image --*/
 figure {
   position: relative;
   width: 100%;
   height: 60%;
-  margin: 0!important;
+  margin: 0 !important;
 }
+
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
   position: absolute;
@@ -260,7 +275,7 @@ figure {
   left: 0;
   width: 100%;
   height: 100%;
-} 
+}
 
 
 #fixed {
@@ -274,25 +289,26 @@ figure {
   background-size: cover;
   background-position: center center;
   -webkit-transform: translateZ(0);
-          transform: translateZ(0);
+  transform: translateZ(0);
   will-change: transform;
 }
+
 /*--- Bootstrap Padding Fix --*/
 [class*="col-"] {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-#limepic{
+#limepic {
   height: 25%;
   width: 25%;
 }
 
 
 
-.card{
-height: 50%;
-width: 50%;
-margin: auto;
+.card {
+  height: 50%;
+  width: 50%;
+  margin: auto;
 }
 
 
@@ -313,11 +329,3 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
-
-
-
-
-
-
-
-

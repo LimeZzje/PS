@@ -1,40 +1,128 @@
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    background-color: #222626;
+    color: white;
 }
 
-#glyphicon{
-    width: 24px; 
+#glyphicon {
+    width: 24px;
     height: 24px;
 }
 
-body{
+body {
     margin-top: 2em;
 }
 
-.col img{
+.pic {
     max-width: 100%;
     height: auto;
 }
 
-.header{
-    text-align:center ;
+.header {
+    text-align: center;
 }
 
-.col .lead{
+.col .lead {
     text-align: justify;
 }
 
-#notaionHr{
-    border-top: 2px solid #b4b4b4;
+.notationHr {
+    border-top: 2px solid #86c232;
     width: 20%;
     margin-top: .3rem;
     margin-bottom: 5rem;
-  }
+}
 
-#notationWrapper{
+#notationWrapper {
     width: 100%;
     height: auto;
+}
+
+#cardWrapper{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.underHeading{
+    text-align: center;
+}
+
+.trick {
+    list-style-type: none;
+}
+
+.card {
+    background-color: #474b4f;
+    color: white;
+    margin-bottom: 1rem;
+    
+   
+}
+
+.firstCards{
+    background-color: #474b4f;
+    color: white;
+    margin: 3rem;
+   
+}
+
+.card button {
+    color: white;
+}
+
+.card button:hover {
+    color: white;
+}
+
+.btn-link {
+    color: white;
+}
+
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    color: white;
+}
+
+a {
+    color: #86c232;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #61892f;
+    text-decoration: none;
+
+}
+
+.firstHeader{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 992px) {
+   
+    #faqPic { 
+     float: none;
+     margin-right:0;
+     width:auto;
+     border:0;
+     padding-bottom: 2rem; 
+   }
+   #faqDiv{
+    width: 100%;
+}
+@media screen and (max-width: 590px) {
+
+   .btn.btn-link.collapsed{
+    font-size: 1.1rem;
+}
+}
+
+
 }

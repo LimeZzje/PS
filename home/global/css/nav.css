@@ -7,6 +7,22 @@
 
 .navbar{
   padding: .8rem;
+  
+  background-color: #86c232 !important;
+}
+
+
+
+.nav-link{
+  color: white !important;
+
+}
+
+#limepic{
+  height: 13%;
+  width: 13%;
+  padding: 0px;
+  margin: 0;
 }
 
 .navbar-nav li{
@@ -39,6 +55,18 @@ nav.navbar {
   text-align: right;
 }
 
+.navbar-toggler {
+background-color: #61892f;
+font-size: 2rem;
+position: absolute;
+right: 10px;
+top: 5px;
+}
+
+.navbar-collapse{
+  padding-top: 3rem;
+  
+}
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -47,4 +75,7 @@ nav.navbar {
   .dropdown-menu.show {
     left: -8rem;
   }
+
+
+
 }

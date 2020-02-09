@@ -12,6 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
   <link rel="stylesheet" type="text/css" href="../css/firstSteps.css" />
   <link rel="stylesheet" type="text/css" href="../../global/css/footer.css" />
   <link rel="stylesheet" type="text/css" href="../../global/css/nav.css" />
@@ -22,7 +24,7 @@
 
 <body>
   <!-- import navbar -->
-  <div class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="navbar">
+  <div class=" fixed-top" id="navbar">
   </div>
   <script>
     $(function () {
@@ -33,92 +35,140 @@
   <!-- end import navbar -->
 
 
+  <div class="container-fluid padding" id="notationWrapper">
+    
+    <h1 class="display-4 header">FAQ</h1>
+    <hr class="notationHr">
 
-  <div class="container-fluid padding">
-    <div class="col-12">
-
-      <h1 class="display-4 header">FAQ</h1>
-      <hr id="notaionHr">
-      <div id="accordion">
-
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                aria-expanded="false" aria-controls="collapseTwo">
-                What's up with these 'mods' or special pens I keep seeing? </button>
-            </h5>
-          </div>
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-              <a href="https://www.reddit.com/r/penspinning/comments/9rovhs/pen_modification_faqs_v20/"> Check out this
-                reddit post and make your own opinion about the topic</a></div>
-          </div>
-        </div>
+    <div class="container-fluid padding row " id="notationContainer">
+      <div class="col-xs-6" id="faqPic">
+        <img class="pic" src="../../img/background3.png">
       </div>
+    
 
-
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-              aria-expanded="false" aria-controls="collapseTwo">
-              I've been trying for hours/days/centuries and can't get it. Help!
-            </button>
-          </h5>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-          <div class="card-body">
-            Pen spinning takes a lot of practice and is not something you will pick up quickly, unfortunately. If you
-            are having trouble, especially with basic tricks, watch different tutorials, watch slomo's (YouTube has a
-            native 0.5x and 0.25x slowmo function), and try to really understand why the trick works the way it does.
-            Guide the pen through the motion with your other hand to help with the muscle memory. Keep practicing! If
-            you really feel stuck ask for help, but be sure to include a video of you trying the trick. Saying "I
-            can't do the Sonic please help" is the same as telling a stranger "I can't run fast please help." -Letho72
-            [2019]</div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingThree">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-              aria-expanded="false" aria-controls="collapseThree">
-              I don’t think my fingers are flexible enough to do that…
-            </button>
-          </h5>
-        </div>
-        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-          <div class="card-body">
-            Everybody can learn penspinning. You don‘t need special fingers to be an elite spinner. The vast majority
-            of tricks only little movement of your finger, so no worries about your fingers!
-            But keep in mind:
-            It might stress your fingers and tendons If you have a very heavy pen,
-            especially in the beginning. It can lead to tendonitis (Google it) if you overdo yourself, so take some
-            breaks
-            inbetween long sessions of spinning.
+      <div id="faqDiv" class="col-xs-6">
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  What's up with these 'mods' or special pens I keep seeing? </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <a href="https://www.reddit.com/r/penspinning/comments/9rovhs/pen_modification_faqs_v20/"> Check out
+                  this
+                  reddit post and make your own opinion about the topic</a></div>
+            </div>
           </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  I've been trying for hours/days/centuries and can't get it. Help!
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Pen spinning takes a lot of practice and is not something you will pick up quickly, unfortunately. If
+                you
+                are having trouble, especially with basic tricks, watch different tutorials, watch slomo's (YouTube
+                has a
+                native 0.5x and 0.25x slowmo function), and try to really understand why the trick works the way it
+                does.
+                Guide the pen through the motion with your other hand to help with the muscle memory. Keep practicing!
+                If
+                you really feel stuck ask for help, but be sure to include a video of you trying the trick. Saying "I
+                can't do the Sonic please help" is the same as telling a stranger "I can't run fast please help." - <a
+                  href="https://www.reddit.com/r/penspinning/comments/a4hc2p/new_spinners_click_here_v20/">Letho72[2019]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  I don’t think my fingers are flexible enough to do that…
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Everybody can learn penspinning. You don‘t need special fingers to be an elite spinner. The vast
+                majority
+                of tricks only need little movement of your fingers, so no worries, you don't need to fold prezels
+                with
+                your
+                fingers.
+                <a href="https://youtu.be/HCN0xl5S-3w?t=92">Even though, japanese spinner Fire@Fox does exactly
+                  that...</a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingfour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsefour"
+                  aria-expanded="false" aria-controls="collapsefour">
+                  Trick, Hybrid, Linkage, Combo... what is the difference?!
+                </button>
+              </h5>
+            </div>
+            <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordion">
+              <div class="card-body">
+                <ul>
+                  <li>Trick: A single action that can be described using one standard term e.g. Thumbaround, Twisted
+                    Sonic, and Pass.</li>
+                  <li>Hybrid: A linkage of two tricks where the second trick begins before the first is finished.
+                    There
+                    are many hybrids that are so common they are named and treated as a single trick e.g. Twisted
+                    Sonic
+                    and Ext TA.</li>
+                  <li>Linkage (Link): A short series of tricks.</li>
+                  <li>Combo: A series of linkages that has well defined flow and aesthetic. Combos should have a
+                    distinct
+                    beginning and end and should feel 'complete.' - <a
+                      href="https://www.reddit.com/r/penspinning/comments/a4hc2p/new_spinners_click_here_v20/">Letho72[2019]</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
     </div>
-
   </div>
+  </div>
+
 
 
   <hr class="my-4">
 
-  
   <div class="container-fluid padding" id="notationWrapper">
-    <h1  class="display-4 header">Notation</h1>
-    <hr id="notaionHr">
+    <h1 class="display-4 header">Notation</h1>
+    <hr class="notationHr">
     <div class="container-fluid padding row " id="notationContainer">
       <div class="col">
-  
+
         <p class="lead">As you can see in the picture, every finger on your hand has a notation. The thumb is T (for
           thumb), index is 1, middle is 2, ring is 3 and pinky is 4.
           If you hold your pen between middle- and indexfinger, this position would be referred to as "12". The same
           goes
           for every other combination of pen positioning in your hand.
-          Don't forget about weird ones like "14" where you would hold your pen with your index and pinkyfinger. If you
+          Don't forget about weird ones like "14" where you would hold your pen with your index and pinkyfinger. If
+          you
           would hold your pen with your thumb and index finger, this would be called "t1".
           I think you get the point. But why is this important?
           Every trick has a starting and an ending position. If I´d just say: "Do a 'Sonic'!" (Trickname) it would be
@@ -130,192 +180,194 @@
       </div>
 
       <div class="col">
-        <img src="../../img/background.png"></a>
+        <img class="pic" src="../../img/background.png" />
       </div>
     </div>
   </div>
-    <hr class="my-4">
+  <hr class="my-4">
 
-    <div class="container-fluid padding">
-      <div class="col-12">
-        <h1 class="display-4 header">First Tricks!</h1>
-        <hr id="notaionHr">
-        <p class="lead">
-          Now that you understand penspinning's notation, let's learn the first tricks!
-        </p>
+  <div class="container-fluid padding">
+    <div class="col-12">
+      <h1 class="display-4 header">First Tricks!</h1>
+      <hr class="notationHr">
+      <div class="underHeading">
+      <p class="lead underHeading">
+        Now that you understand penspinning's notation, let's learn the first tricks!
+      </p>
+    </div>
 
-        <div class="card-group">
-          <div class="card">
-            <div class="card-body"> Thumbaround </div>
-            <img class="card-img-bottom" src="/images/pathToYourImage.png" alt="Card image cap">
+<div id="cardWrapper">
+      <div class="card-group">
+        <div class="card firstCards">
+          <div class="card-body firstHeader"> Thumbaround </div>
+          <img class="card-img-bottom first" src="../../global/img/oneMx.jpg" alt="Card image cap">
+        </div>
+        <div class="card firstCards">
+          <div class="card-body firstHeader"> Sonic </div>
+          <img class="card-img-bottom first" src="../../global/img/palmspin.png" alt="Card image cap">
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card firstCards">
+          <div class="card-body firstHeader"> Charge </div>
+          <img class="card-img-bottom first" src="../../global/img/penRow.png" alt="Card image cap">
+        </div>
+        <div class="card firstCards">
+          <div class="card-body firstHeader"> Fingerpass </div>
+          <img class="card-img-bottom first" src="../../global/img/twoMx.png" alt="Card image cap">
+        </div>
+        <div class="card firstCards">
+          <div class="card-body firstHeader"> Infinity </div>
+          <img class="card-img-bottom first" src="../../global/img/palmspin.png" alt="Card image cap">
+        </div>
+      </div>
+  </div>
+
+  <hr class="my-4">
+
+  <div class="container-fluid padding">
+    <div class="col-12">
+      <h1 class="display-4 header">Learning Guideline</h1>
+      <hr class="notationHr">
+      <div class="timeline">
+
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="glyphicon" id="juleStörtDas">&#xe239;</span>
           </div>
-          <div class="card">
-            <div class="card-body"> Sonic </div>
-            <img class="card-img-bottom" src="/images/pathToYourImage.png" alt="Card image cap">
+          <div class="timeline-content">
+            <p class="timeline-content-date">Fundamentals</h2>
+              <hr>
+              <ul class="tricks">
+                <li class="trick">Thumbaround</li>
+                <li class="trick">Sonic</li>
+                <li class="trick">Charge</li>
+                <li class="trick">Fingerpass</li>
+                <li class="trick">Infinity</li>
+                <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
+              </ul>
           </div>
         </div>
-        <div class="card-group">
-          <div class="card">
-            <div class="card-body"> Charge </div>
-            <img class="card-img-bottom" src="/images/pathToYourImage.png" alt="Card image cap">
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="glyphicon">&#xe232;</span>
+
           </div>
-          <div class="card">
-            <div class="card-body"> Fingerpass </div>
-            <img class="card-img-bottom" src="/images/pathToYourImage.png" alt="Card image cap">
+          <div class="timeline-content right">
+            <p class="timeline-content-date">Basics</h2>
+              <hr>
+              <ul class="tricks">
+                <li class="trick">Twisted Sonic</li>
+                <li class="trick">Backaround</li>
+                <li class="trick">Indexaround</li>
+                <li class="trick">Fingerless Thumbaround</li>
+                <li class="trick">Neosoinc</li>
+                <li class="trick">Scissor Spin</li>
+                <li class="trick">Thumbaround Extended</li>
+                <li class="trick">Neobackaround</li>
+                <li class="trick"></li>
+
+                <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
           </div>
-          <div class="card">
-            <div class="card-body"> Infinity </div>
-            <img class="card-img-bottom" src="/images/pathToYourImage.png" alt="Card image cap">
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="glyphicon">&#x270f;</span>
+
+          </div>
+          <div class="timeline-content">
+            <p class="timeline-content-date">Intermediate</h2>
+              <hr>
+              <ul class="tricks">
+                <li class="trick">Warped Sonic</li>
+                <li class="trick">Shadow</li>
+                <li class="trick">Middlearound</li>
+                <li class="trick">Ringaround</li>
+                <li class="trick">Middlebackaround</li>
+                <li class="trick">Ringbackaround</li>
+                <li class="trick">Inverse Sonic</li>
+                <li class="trick">Inverse Twisted Sonic</li>
+                <li class="trick">Twisted Sonic Bust</li>
+                <li class="trick">Demon Sonic</li>
+                <li class="trick">Angel Sonic</li>
+                <li class="trick">Devils Sonic</li>
+
+
+                <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
+          </div>
+        </div>
+
+
+        <div class="timeline-item ">
+          <div class="timeline-icon">
+            <span class="glyphicon">&#xe233;</span>
+          </div>
+          <div class="timeline-content right">
+            <p class="timeline-content-date">Advanced</h2>
+              <hr>
+              <ul class="tricks">
+                <li class="trick">Backaround fall</li>
+                <li class="trick">Twisted Sonic Multiple Bust</li>
+                <li class="trick">Flush Sonic</li>
+                <li class="trick">Side Sonic</li>
+                <li class="trick">Powerpass</li>
+                <li class="trick">Mirrored Powerpass</li>
+                <li class="trick">Palmspin</li>
+
+
+                <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">
+            <span class="glyphicon">&#xe240;</span>
+          </div>
+          <div class="timeline-content ">
+            <p class="timeline-content-date">Expert</h2>
+              <hr>
+              <ul class="tricks">
+                <li class="trick">Spreads</li>
+                <li class="trick">Hai Tua</li>
+                <li class="trick">Spider Spin</li>
+                <li class="trick">Inverse Shadow</li>
+                <li class="trick">Ta > Palmspin > Fl Ta</li>
+                <li class="trick">Pun New</li>
+
+                <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
           </div>
         </div>
 
       </div>
-    </div>
 
-    <hr class="my-4">
-
-    <div class="container-fluid padding">
-      <div class="col-12">
-        <h1>Learning Guidline</h1>
-        <div class="timeline">
-
-
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <span class="glyphicon" id="juleStörtDas">&#xe239;</span>
-            </div>
-            <div class="timeline-content">
-              <p class="timeline-content-date">Fundamentals</h2>
-                <hr>
-                <ul class="tricks">
-                  <li class="trick">Thumbaround</li>
-                  <li class="trick">Sonic</li>
-                  <li class="trick">Charge</li>
-                  <li class="trick">Fingerpass</li>
-                  <li class="trick">Infinity</li>
-                  <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
-                </ul>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <span class="glyphicon">&#xe232;</span>
-
-            </div>
-            <div class="timeline-content right">
-              <p class="timeline-content-date">Basics</h2>
-                <hr>
-                <ul class="tricks">
-                  <li class="trick">Twisted Sonic</li>
-                  <li class="trick">Backaround</li>
-                  <li class="trick">Indexaround</li>
-                  <li class="trick">Fingerless Thumbaround</li>
-                  <li class="trick">Neosoinc</li>
-                  <li class="trick">Scissor Spin</li>
-                  <li class="trick">Thumbaround Extended</li>
-                  <li class="trick">Neobackaround</li>
-                  <li class="trick"></li>
-
-                  <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <span class="glyphicon">&#x270f;</span>
-
-            </div>
-            <div class="timeline-content">
-              <p class="timeline-content-date">Intermediate</h2>
-                <hr>
-                <ul class="tricks">
-                  <li class="trick">Warped Sonic</li>
-                  <li class="trick">Shadow</li>
-                  <li class="trick">Middlearound</li>
-                  <li class="trick">Ringaround</li>
-                  <li class="trick">Middlebackaround</li>
-                  <li class="trick">Ringbackaround</li>
-                  <li class="trick">Inverse Sonic</li>
-                  <li class="trick">Inverse Twisted Sonic</li>
-                  <li class="trick">Twisted Sonic Bust</li>
-                  <li class="trick">Demon Sonic</li>
-                  <li class="trick">Angel Sonic</li>
-                  <li class="trick">Devils Sonic</li>
-
-
-                  <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
-            </div>
-          </div>
-
-
-          <div class="timeline-item ">
-            <div class="timeline-icon">
-              <span class="glyphicon">&#xe233;</span>
-            </div>
-            <div class="timeline-content right">
-              <p class="timeline-content-date">Advanced</h2>
-                <hr>
-                <ul class="tricks">
-                  <li class="trick">Backaround fall</li>
-                  <li class="trick">Twisted Sonic Multiple Bust</li>
-                  <li class="trick">Flush Sonic</li>
-                  <li class="trick">Side Sonic</li>
-                  <li class="trick">Powerpass</li>
-                  <li class="trick">Mirrored Powerpass</li>
-                  <li class="trick">Palmspin</li>
-
-
-                  <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
-            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <span class="glyphicon">&#xe240;</span>
-            </div>
-            <div class="timeline-content ">
-              <p class="timeline-content-date">Expert</h2>
-                <hr>
-                <ul class="tricks">
-                  <li class="trick">Spreads</li>
-                  <li class="trick">Hai Tua</li>
-                  <li class="trick">Spider Spin</li>
-                  <li class="trick">Inverse Shadow</li>
-                  <li class="trick">Ta > Palmspin > Fl Ta</li>
-                  <li class="trick">Pun New</li>
-
-                  <p class="trickinfo">vergesst nicht euer Gemüse zu essen!</p>
-            </div>
-          </div>
-
-        </div>
-
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- import footer -->
-    <div id="footer">
 
     </div>
+  </div>
 
-    <script>
-      $(function () {
-        $("#footer").load("../../global/fragments/footer.html");
-      });
-    </script>
-    <!-- end import footer -->
+
+
+
+
+
+
+
+
+
+
+  <!-- import footer -->
+  <div id="footer">
+
+  </div>
+
+  <script>
+    $(function () {
+      $("#footer").load("../../global/fragments/footer.html");
+    });
+  </script>
+  <!-- end import footer -->
 </body>
 
 </html>
