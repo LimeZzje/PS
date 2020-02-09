@@ -6,12 +6,15 @@
 }
 
 .navbar{
-  padding: .8rem;
-  
+ padding: 0;
   background-color: #86c232 !important;
 }
 
-
+.collapse{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
 
 .nav-link{
   color: white !important;
@@ -63,10 +66,7 @@ right: 10px;
 top: 5px;
 }
 
-.navbar-collapse{
-  padding-top: 3rem;
-  
-}
+
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
@@ -75,7 +75,5 @@ top: 5px;
   .dropdown-menu.show {
     left: -8rem;
   }
-
-
 
 }

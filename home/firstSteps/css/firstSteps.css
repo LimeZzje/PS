@@ -107,16 +107,18 @@ a:hover {
 
 @media screen and (max-width: 992px) {
    
-    #faqPic { 
+    #faqPic, #textCol { 
      float: none;
      margin-right:0;
      width:auto;
      border:0;
      padding-bottom: 2rem; 
    }
-   #faqDiv{
+   #faqDiv, #picCol{
     width: 100%;
 }
+
+
 @media screen and (max-width: 590px) {
 
    .btn.btn-link.collapsed{
