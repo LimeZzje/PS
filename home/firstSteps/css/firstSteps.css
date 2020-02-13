@@ -11,9 +11,6 @@ body {
     height: 24px;
 }
 
-body {
-    margin-top: 2em;
-}
 
 .pic {
     max-width: 100%;
@@ -22,6 +19,7 @@ body {
 
 .header {
     text-align: center;
+    padding-top: 2rem;
 }
 
 .col .lead {
@@ -40,12 +38,12 @@ body {
     height: auto;
 }
 
-#cardWrapper{
+#cardWrapper {
     width: 65%;
     margin: 0 auto;
 }
 
-.underHeading{
+.underHeading {
     text-align: center;
 }
 
@@ -57,15 +55,15 @@ body {
     background-color: #474b4f;
     color: white;
     margin-bottom: 1rem;
-    
-   
+
+
 }
 
-.firstCards{
+.firstCards {
     background-color: #474b4f;
     color: white;
     margin: 3rem;
-   
+
 }
 
 .card button {
@@ -97,42 +95,80 @@ a:hover {
 
 }
 
-.firstHeader{
+.firstHeader {
     text-align: center;
-    font-size: 2rem;
+    font-size: 20px;
     margin: 0 auto;
 }
 
+#faqPic {
+    padding-right: 2rem;
+    width: 50%;
+}
+
+#faqDiv {
+    width: 50%;
+}
+
+#cardImg {
+    background-image: url("../../global/img/penRow.png");
+}
+
+#notationContainer {
+    margin-right: 0;
+}
+
+.fa {
+    font-size: 30px;
+    line-height: 1.7;
+    padding-left: 0.5rem;
+
+  
+}
 
 
 @media screen and (max-width: 992px) {
-   
-    #faqPic, #textCol { 
-     float: none;
-     margin-right:0;
-     width:auto;
-     border:0;
-     padding-bottom: 2rem; 
-   }
-   #faqDiv, #picCol{
-    width: 100%;
-}
+
+    #faqPic,
+    #textCol {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        padding-bottom: 2rem;
+    }
+
+    #faqDiv,
+    #picCol {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+        padding-bottom: 2rem;
+    }
+
+    #faqPic {
+        padding-right: 0rem;
+    }
+
+    #faqDiv {
+        font-size: 0.5rem !important;
+    }
+
+    .firstHeader {
+
+        font-size: 18px;
+
+    }
 
 
-.navbar-nav {
 
-    margin-right: 2rem; 
-    font-size: 16px;
-  }
+    @media screen and (max-width: 600px) {
 
-
-
-@media screen and (max-width: 600px) {
-
-   .btn.btn-link.collapsed{
-    font-size: 1.1rem;
-}
-}
+        .btn.btn-link.collapsed {
+            font-size: 1.1rem;
+        }
+    }
 
 
 }
