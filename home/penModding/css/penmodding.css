@@ -1,41 +1,100 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #222626;
+  color: white;
+}
 
 
-img {
-    width: 318px;
-    height: 180px;
-    margin: auto;
+.card img {
+  width: 320px;
+  height: 180px;
+  margin: auto;
+}
+
+#cards .card-group .card{
+  margin: 0.5rem;
+  background-color: #5a5a5a;
+  
+}
+
+#cards .card-text{
+  color: white ;
+  
+}
+
+#cards .card-text:hover{
+  color: #86c232 ;
+  
+}
+
+#cards img{ 
+  border: 1px solid white;
+}
+
+#cards .card-body{
+  text-align: center;
 }
 
 /* Search */
 
-.input-group.md-form.form-sm.form-1 input{
-border: 1px solid #bdbdbd;
-border-top-right-radius: 0.25rem;
-border-bottom-right-radius: 0.25rem;
-}
-.input-group.md-form.form-sm.form-2 input {
-border: 1px solid #bdbdbd;
-border-top-left-radius: 0.25rem;
-border-bottom-left-radius: 0.25rem;
-}
-.input-group.md-form.form-sm.form-2 input.red-border {
-border: 1px solid #ef9a9a;
-}
-.input-group.md-form.form-sm.form-2 input.lime-border {
-border: 1px solid #cddc39;
-}
-.input-group.md-form.form-sm.form-2 input.amber-border {
-border: 1px solid #ffca28;
+.input-group.md-form.form-sm.form-1 input {
+  border: 1px solid #bdbdbd;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
+.input-group.md-form.form-sm.form-2 input {
+  border: 1px solid #bdbdbd;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.input-group.md-form.form-sm.form-2 input.red-border {
+  border: 1px solid #ef9a9a;
+}
+
+.input-group.md-form.form-sm.form-2 input.lime-border {
+  border: 1px solid #cddc39;
+}
+
+.input-group.md-form.form-sm.form-2 input.amber-border {
+  border: 1px solid #ffca28;
+}
+
+
+
+.controls-top{
+
+}
+
+.carousel-indicators{
+ padding-bottom: 3rem; 
+}
+
+.carousel-item .card{
+  background-color: white;
+}
+
+.featured{
+  width: 100% !important;
+  height: 360px !important;
+}
+
+#modtypebuttons{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#searchWrapper{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+
+}
+
+.padding{
+  margin-top: 3rem;
+}
+

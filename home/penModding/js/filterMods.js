@@ -102,6 +102,10 @@ function searchMods(){
   listOfMods = JSON.parse(penmods);
   var searchValue = document.getElementById("searchBar").value;
 
+  if(searchValue === ""){
+    searchValue = document.getElementById("searchBarMain").value;
+  }
+
   var listOfFindings = [];
   Array.prototype.forEach.call(listOfMods.mods, function (mod) {
     if (mod.name.toLowerCase().includes(searchValue.toLowerCase())) {

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Penmodding</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <!--<link rel="stylesheet" type="text/css" href="../css/sidebar.css" /> -->
+
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/filterMods.js"></script>
+  <script src="../js/listOfMods.js"></script>
+  <script src="../js/featured.js"></script>
+
+
+  <!-- MDB icon
+  <link rel="icon" href="../../mdb/img/mdb-favicon.ico" type="image/x-icon"> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../../mdb/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="../../mdb/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" type="text/css" href="../../mdb/css/test.css" />
+  <link rel="stylesheet" type="text/css" href="../../global/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="../css/penmodding.css" />
+
+
+
+
+
+
+</head>
+
+<body onload="createCards()">
+
+  <!-- Start your project here-->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="../../../index.html">LimeZzje</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="../../../index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../firstSteps/html/firstSteps.html">First Steps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../trickTutorials/html/AllTricks.html">Trick Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="penmods.html">Penmodding</a>
+        </li>
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Double Cap Mods</a>
+            <a class="dropdown-item" href="#">Single Cap Mods</a>
+            <a class="dropdown-item" href="#">Writeable Mods</a>
+            <a class="dropdown-item" href="#">All Mods</a>
+          </div>
+        </li>
+      </ul>
+      <!-- Links -->
+
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" id="searchBar" type="text" placeholder="Search for a Penmod"
+            aria-label="Search" onkeyup="searchMods()">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <!--Video source-->
+          <video muted autoplay loop playsinline>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+          </video>
+          <!-- Carousel content -->
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+              <li>
+                <h1 class="font-weight-bold text-uppercase">Welcome to the world of penmodding</h1>
+              </li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">Explore the biggest source of penmodding tutorials.
+                  <br /> Try the searchfunction if you are looking for a specific mod. <br /> Happy modding!</p>
+              </li>
+
+              </li>
+              <!--Carousel Wrapper-->
+              <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+                <!--Controls-->
+                <div class="controls-top">
+                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+                      class="fa fa-chevron-left"></i></a>
+                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+                      class="fa fa-chevron-right"></i></a>
+                </div>
+                <!--/.Controls-->
+
+
+
+                <!--Slides-->
+                <div class="carousel-inner" role="listbox">
+
+                  <!--First slide-->
+                  <div class="carousel-item active">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--/.First slide-->
+
+                  <!--Second slide-->
+                  <div class="carousel-item">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--/.Second slide-->
+
+                  <!--Third slide-->
+                  <div class="carousel-item">
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 clearfix d-none d-md-block">
+                        <div class="card mb-2">
+                          <img class="card-img-top featured" src="../img/busterRetr.png" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">Card title</h4>
+                            <p class="card-text">Test</p>
+                            <a class="btn btn-primary">Tutorial</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--/.Third slide-->
+
+                </div>
+                <!--/.Slides-->
+
+              </div>
+              <!--/.Carousel Wrapper-->
+            </ul>
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
+              <li data-target="#multi-item-example" data-slide-to="2" class="active"></li>
+            </ol>
+            <!--/.Indicators-->
+          </div>
+
+        </div>
+
+        <!--/Mask-->
+      </div>
+      <!--/First slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+
+    <!--/.Controls-->
+  </div>
+
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Looking For A Pen?</h1>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="input-group md-form form-sm form-2 pl-0" id="searchWrapper">
+    <input id="searchBarMain" class="form-control my-0 py-1 red-border" type="text" placeholder="Search for a Penmod"
+      aria-label="Search" onkeyup="searchMods()">
+    <div class="input-group-append">
+      <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+          aria-hidden="true"></i></span>
+    </div>
+  </div>
+
+
+  <div class="btn-group" id="modtypebuttons">
+    <button type="button" class="btn btn-primary">Double Cap Mods</button>
+    <button type="button" class="btn btn-primary">Single Cap Mods</button>
+    <button type="button" class="btn btn-primary">Writeable Mods</button>
+    <button type="button" class="btn btn-primary">All Mods</button>
+  </div>
+
+  <div class="wrapper">
+
+
+    <!-- Cards -->
+    <div id="cardWrapper">
+
+      <div id="cards">
+
+      </div>
+
+
+
+      <!-- import footer -->
+      <div id="footer">
+
+      </div>
+
+      <script>
+        $(function () {
+          $("#footer").load("../../global/fragments/footer.html");
+        });
+      </script>
+      <!-- end import footer -->
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="../../mdb/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../../mdb/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../../mdb/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../../mdb/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <!-- import footer -->
+  <div id="footer">
+
+  </div>
+
+  <script>
+    $(function () {
+      $("#footer").load("../../global/fragments/footer.html");
+    });
+  </script>
+  <!-- end import footer -->
+  </div>
+  </div>
+  </div>
+
+
+
+</body>
+
+</html>

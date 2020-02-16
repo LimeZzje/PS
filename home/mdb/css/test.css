@@ -1,0 +1,26 @@
+    /* Navigation*/
+    .navbar {
+        background-color: transparent;
+      }
+      .scrolling-navbar {
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+      }
+      .top-nav-collapse {
+        background-color: #34456a;
+      }
+      footer.page-footer {
+        background-color: #34456a;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .navbar {
+          background-color: #34456a;
+        }
+      }
+
+      /* Necessary for full page carousel*/
+      html,
+      body,
+      .view {
+        height: 100%;
+      }
