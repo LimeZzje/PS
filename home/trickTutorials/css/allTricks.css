@@ -22,6 +22,20 @@ padding-right: 10%;
   text-align: left;
 }
 
+iframe{
+  max-width: 100%;
+  border: 2px solid white;
+}
+
+.lead{
+  list-style-type: none;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+
+
 @media (max-width: 992px) {
   .social a {
     font-size: 4em;

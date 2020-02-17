@@ -6,8 +6,9 @@ body {
 
 
 .card img {
-  width: 320px;
-  height: 180px;
+  width: 100%;
+  height: auto;
+  max-width:600px;
   margin: auto;
 }
 
@@ -76,8 +77,8 @@ body {
 }
 
 .featured{
-  width: 100% !important;
-  height: 360px !important;
+  width: 100%;
+  height: auto;
 }
 
 #modtypebuttons{
@@ -97,4 +98,5 @@ body {
 .padding{
   margin-top: 3rem;
 }
+
 
