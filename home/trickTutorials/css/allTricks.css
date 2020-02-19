@@ -33,7 +33,27 @@ iframe{
   text-justify: inter-word;
 }
 
+.dx-texteditor-input{
+  padding: 0px; 
+}
 
+.dx-searchbox .dx-icon-search{
+  position: absolute !important;
+}
+
+.dx-treeview-item{
+  color: white;
+  font-size: 16px;
+  font-family: 'poppins-bold', sans-serif !important;
+}
+
+#trickWrapper{
+  background-color: #388087 !important;
+}
+
+#disclaimerUl{
+display: none;
+}
 
 
 @media (max-width: 992px) {

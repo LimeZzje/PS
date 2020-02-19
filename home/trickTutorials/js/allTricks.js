@@ -44,10 +44,10 @@ $(function(){
 
 function handleDisclaimerClick(){
     var disclaimer = document.getElementById("disclaimerUl");
-    if(disclaimer.style.display === "none") {
-       disclaimer.style.display = "block" ;
+    if(disclaimer.style.display === "block") {
+       disclaimer.style.display = "none" ;
     }   else {
-        disclaimer.style.display = "none";
+        disclaimer.style.display = "block";
     }
     
 
