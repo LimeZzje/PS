@@ -79,8 +79,8 @@ var penmods = '{"mods":[' +
     '{ "name":"Sweet Drop Mod","link":"https://penmodding.pm/archives/1326","pic":"../img/sweetdropmod.jpg","text":"Name : Sweet Drop Mod – Creator : Unknown – Lenght : 20 cm – Weigth : 16 g – Outsert : No – Link : Sweet Drop Mod ( Ponkotu’s blog ) – Making : Easy", "type":"dc"},' +
     '{ "name":"Comprecise","link":"https://penmodding.pm/archives/1317","pic":"../img/comprecise.jpg","text":"Name : ComPrecise – Creator : Tone – Lenght : 20.5 cm – Weigth : 16g – Insert / Outsert : No. – Link : ComPrecise (UPSB) – Modding : Easy", "type":"dc"},' +
     '{ "name":"Seven Watercolor Mod","link":"https://penmodding.pm/archives/1225","pic":"../img/sevenwatercolor.png","text":"Name : Seven’s Watercolor Mod – Creator : Seven – Lenght : 19,4 cm – Weight : ~16 g – Outsert : No. – Link : Seven’s Watercolor Mod ( UPSB ) – Making : Easy", "type":"dc"},' +
-    '{ "name":"","link":"","pic":"","text":"", "type":"dc"},' +
-    '{ "name":"","link":"","pic":"","text":"", "type":"dc"},' +
+    '{ "name":"Emboss Mod","link":"https://penmodding.pm/archives/1105","pic":"../img/emboss mod.JPG","text":"Nom : Emboss Mod – Créateur : ? – Taille : 21 cm – Poids : 16 g – Insert / Outsert : Non – Lien : Emboss Mod ( Blog de ponkotu ), Emboss Mod ( FPSB ) – Moddage : Facile ", "type":"dc"},' +
+    '{ "name":"Dr. KT","link":"https://penmodding.pm/archives/16","pic":"../img/drkt.jpg","text":"Name : Dr.Kt – Creator : Ryo – Length : 20.5 cm – Weight : 20 g – Outsert : Yes – Link : Dr.Kt and others… – Making : Easy", "type":"dc"},' +
     '{ "name":"","link":"","pic":"","text":"", "type":"dc"},' +
     '{ "name":"","link":"","pic":"","text":"", "type":"dc"},' +
     '{ "name":"","link":"","pic":"","text":"", "type":"dc"},' +
