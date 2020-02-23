@@ -66,20 +66,19 @@
   top: 11px;
 }
 
-.timeline .timeline-item .timeline-icon .glyphicon {
-  top: 25%;
+.timeline .timeline-item .timeline-icon img {
+  top: -5%;
+  left: -14%;
 
 }
 
-.glyphicon {
-  font-size: 25px;
+#imgfundamentals{
+  top: -25%;
 }
 
-
-#juleStörtDas{
-    left: 21%;
+#imgexpert{
+  top: -50%;
 }
-
 
 .timeline .timeline-item .timeline-content {
   padding: 20px;

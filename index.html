@@ -2,266 +2,353 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	
-	<link href="./home/global/css/style.css" rel="stylesheet">
-	<script src="./home/index/breakdownGenerator.js"></script>
-	<script src="./home/index/breakdownTricks.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Penmodding</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+  <!--<link rel="stylesheet" type="text/css" href="../css/sidebar.css" /> -->
+
+  <script src="./home/index/breakdownGenerator.js"></script>
+  <script src="./home/index/breakdownTricks.js"></script>
+
+
+
+  <!-- MDB icon
+  <link rel="icon" href="../../mdb/img/mdb-favicon.ico" type="image/x-icon"> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./home/mdb/css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="./home/mdb/css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" type="text/css" href="./home/mdb/css/test.css" />
+  <link rel="stylesheet" type="text/css" href="./home/global/css/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./home/global/css/style.css" />
+
+
+
+
+
 
 </head>
 
-<body>
+<body onload="createCards()">
+
+  <!-- Start your project here-->
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="index.html">LimeZzje</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./home/firstSteps/html/firstStepsPs.html">First Steps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./home/trickTutorials/html/trickTutorials.html">Trick Tutorials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./home/penModding/html/penmods.html">Penmodding</a>
+        </li>
+        <!-- Dropdown -->
+        
+      </ul>
+      <!-- Links -->
+
+     
+    </div>
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
 
 
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-		<div class="container-fluid">
-			<!-- <a class="navbar-brand" href="#"><img id="limepic" src="home/global/img/Logo_Website.png"></a> -->
-			<a class="navbar-brand" href="#"></a>
+      <!--First slide-->
+      <div class="carousel-item active">
+        <!--Mask-->
+        <div class="view">
+          <!--Video source-->
+          <video muted autoplay loop playsinline>
+            <source src="https://mdbootstrap.com/img/video/Lines.mp4" type="video/mp4" />
+          </video>
+          <!-- Carousel content -->
+          <div class="full-bg-img flex-center mask rgba-indigo-light white-text">
+            <ul class="animated fadeInUp col-md-12 list-unstyled list-inline">
+              <li>
+                <h1 class="font-weight-bold text-uppercase">Penspinning</h1>
+                <h1 class="font-weight-bold text-uppercase">Step By Step And Easy To Learn</h1>
+              </li>
+              <li>
+                <p class="font-weight-bold text-uppercase py-4">Join our awesome community on Discord</p>
+                <button href="#" class="btn btn-primary" >Awesome Community Name</button>
 
+              </li>
 
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./home/firstSteps/html/firstStepsPs.html">First Steps</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./home/trickTutorials/html/trickTutorials.html">Trick Tutorials</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="./home/penModding/html/penmods.html">Penmodding</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Inspiration</a>
-					</li>
+              </li>
+              <!--Carousel Wrapper-->
+           
+              <!--/.Carousel Wrapper-->
+            </ul>
+            <!--Indicators-->
+           
 
+            <!--/.Indicators-->
+          </div>
 
-				</ul>
-			</div>
-		</div>
-	</nav>
+        </div>
 
+        <!--/Mask-->
+      </div>
+      <!--/First slide-->
 
-	<!--- Image Slider -->
+    </div>
+    <!--/.Slides-->
 
-	<div id="slides" class="carousel slide" data-ride="carousel" data-interval="false">
-		<ul class="carousel-indicators">
-			<li data-target="#slides" data-slide-to="0" class="active" data-interval="false"></li>
-			<li data-target="#slides" data-slide-to="1"></li>
-			<li data-target="#slides" data-slide-to="2"></li>
-		</ul>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img class="carouselPic" src="home/global/img/penRow.png">
-				<div class="carousel-caption">
-					<h1 class="display-2">Penspinning</h1>
-					<h3>Step By Step And Easy To Learn</h3>
-				</div>
-			</div>
+    <!--Controls-->
 
-			<div class="carousel-item">
-				<img class="carouselPic" src="home/global/img/palmspin.png">
-			</div>
-			<div class="carousel-item">
-				<img class="carouselPic" src="home/global/img/twoMx.png">
-			</div>
-		</div>
-	</div>
+    <!--/.Controls-->
+  </div>
 
-	<!--- Jumbotron -->
+  <div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Learn Penspinning at your own pace.</h1>
+            <hr>
+            <div class="col-12">
+                <p class="lead">As penspinners, we know how hard it is to find quality Penspinning tutorials and
+                    content that keeps you motivated. </p>
+                <p class="lead">And for newer spinners, we know how intimidating it is to get started. We've been
+                    there. </p>
+                <p class="lead">This website was built to help you get started and keep improving. </p>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-6">
 
+            <!-- Cards -->
+            <div class="card-group">
 
-	<!--- Welcome Section -->
-	<div class="container-fluid padding">
-		<div class="row welcome text-center">
-			<div class="col-12">
-				<h1 class="display-4">Learn Penspinning at your own pace.</h1>
-				<hr>
-				<div class="col-12">
-					<p class="lead">As penspinners, we know how hard it is to find quality Penspinning tutorials and
-						content that keeps you motivated. </p>
-					<p class="lead">And for newer spinners, we know how intimidating it is to get started. We've been
-						there. </p>
-					<p class="lead">This website was built to help you get started and keep improving. </p>
-				</div>
-			</div>
-		</div>
-	</div>
+            </div>
 
-	<!--- Three Column Section -->
-	<div class="container-fluid padding">
-		<div class="row text-center padding">
-			<div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="./home/firstSteps/html/firstStepsPs.html" class="cardlink">
+                <div class="card"> <img class="card-img-top" src="./home/global/img/palmspin.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">First Steps</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="./home/trickTutorials/html/trickTutorials.html" class="cardlink">
+                <div class="card"> <img class="card-img-top" src="./home/global/img/twoMx.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Trick Tutorials</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-				<!-- Cards -->
-				<div class="card-group">
+        <div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="./home/penModding/html/penmods.html" class="cardlink">
+                <div class="card"> <img class="card-img-top" src="./home/global/img/oneMx.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Penmodding</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
 
-				</div>
-
-				<a href="./home/firstSteps/html/firstSteps.html" class="cardlink">
-					<div class="card"> <img class="card-img-top" src="./home/global/img/palmspin.png"
-							alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title">First Steps</h4>
-						</div>
-					</div>
-				</a>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<a href="./home/trickTutorials/html/AllTricks.html" class="cardlink">
-					<div class="card"> <img class="card-img-top" src="./home/global/img/twoMx.png" alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title">Trick Tutorials</h4>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<a href="./home/penModding/html/penmodding.html" class="cardlink">
-					<div class="card"> <img class="card-img-top" src="./home/global/img/oneMx.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title">Penmodding</h4>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div class="col-xs-12 col-sm-6 col-md-6">
-				<a href="#" class="cardlink">
-					<div class="card"> <img class="card-img-top" src="./home/global/img/penRow.png"
-							alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title">Inspiration</h4>
-						</div>
-					</div>
-				</a>
-			</div>
-		</div>
-		<hr class="my-4">
-	</div>
+        <!--<div class="col-xs-12 col-sm-6 col-md-6">
+            <a href="#" class="cardlink">
+                <div class="card"> <img class="card-img-top" src="./home/global/img/penRow.png"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Inspiration</h4>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+    </div>
+    <hr class="my-4">
+</div>
 
 
 
-	<!--- Two Column Section -->
-	<div class="container-fluid padding">
-		<div class="row padding">
-			<div class="col-lg-6">
-				<h2>Breakdown-Generator</h2>
-				<p>Are you always spinning the same five linkings?</p>
-				<p>Try out the new Breakdown-Generator to get some new Ideas!</p>
-				<br>
-				<p id="breakdown">
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-6">
+            <h2>Breakdown-Generator</h2>
+            <p>Are you always spinning the same five linkings?</p>
+            <p>Try out the new Breakdown-Generator to get some new Ideas!</p>
+            <br>
+            <p id="breakdown">
 
-				</p>
-				<button href="#" class="btn btn-primary" onclick="generateBreakdown()">Generate a Breakdown</button>
-			</div>
+            </p>
+            <button href="#" class="btn btn-primary" onclick="generateBreakdown()">Generate a Breakdown</button>
+        </div>
 
 
-		</div>
-	</div>
+    </div>
+</div>
 
-	<!--
+<!--
 <hr class="my-4">
-	- Fixed background 
+- Fixed background 
 
 <figure>
-	<div class="fixed-wrap">
-		<div id="fixed">
+<div class="fixed-wrap">
+    <div id="fixed">
 
-		</div>
-	</div>
+    </div>
+</div>
 </figure>
 -->
-	<!--- Emoji Section -->
-	<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
-	<div id="emoji" class="collapse">
-		<div class="container-fluid padding">
-			<div class="row text-center">
-				<div class="col-sm-6 col-md-3">
-					<img class="gif" src="home/img/gif/panda.gif">
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<img class="gif" src="home/img/gif/poo.gif">
-				</div>
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
+<div id="emoji" class="collapse">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="home/img/gif/panda.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="home/img/gif/poo.gif">
+            </div>
 
-				<div class="col-sm-6 col-md-3">
-					<img class="gif" src="home/img/gif/unicorn.gif">
-				</div>
-				<div class="col-sm-6 col-md-3">
-					<img class="gif" src="home/img/gif/chicken.gif">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<!--- Meet the team -->
-
-	<!--- Cards -->
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="home/img/gif/unicorn.gif">
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img class="gif" src="home/img/gif/chicken.gif">
+            </div>
+        </div>
+    </div>
+</div>
 
 
-	<!--- Two Column Section -->
+<!--- Meet the team -->
 
-	<!--- Connect -->
-
-
+<!--- Cards -->
 
 
-	<!--- Footer -->
+<!--- Two Column Section -->
 
-	<footer>
-		<div class="container fluid-padding">
-			<div class="row text-center">
-				<div class="col-md-4">
-					<hr class="light">
-					<h5>Creater of the site</h5>
-					<hr class="light">
-					<p>LimeZz</p>
-
-				</div>
+<!--- Connect -->
 
 
-				<div class="col-md-4">
-					<hr class="light">
-					<h5>Collaboration with</h5>
-					<hr class="light">
-					<p>Juzzle</p>
-					<p>Letho72</p>
-					<p>Cookie</p>
-				</div>
 
-				<div class="col-md-4">
-					<hr class="light">
-					<h5>Service Area</h5>
-					<hr class="light">
-					<p>City, State, Postalcode</p>
-					<p>City, State, Postalcode</p>
-					<p>City, State, Postalcode</p>
-				</div>
-				<div class="col-12">
-					<hr class="light">
-					<h5>&copy;LimeZzje</h5>
-				</div>
-			</div>
-		</div>
-	</footer>
+
+<!--- Footer -->
+
+<footer>
+    <div class="container fluid-padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Creater of the site</h5>
+                <hr class="light">
+                <p>LimeZz</p>
+
+            </div>
+
+
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Collaboration with</h5>
+                <hr class="light">
+                <p>Juzzle</p>
+                <p>Letho72</p>
+                <p>Cookie</p>
+            </div>
+
+            <div class="col-md-4">
+                <hr class="light">
+                <h5>Service Area</h5>
+                <hr class="light">
+                <p>City, State, Postalcode</p>
+                <p>City, State, Postalcode</p>
+                <p>City, State, Postalcode</p>
+            </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy;LimeZzje</h5>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+  <!-- End your project here-->
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="./home/mdb/js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="./home/mdb/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="./home/mdb/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="./home/mdb/js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+  <!-- import footer -->
+  <div id="footer">
+
+  </div>
+
+  <script>
+    $(function () {
+      $("#footer").load("./home/global/fragments/footer.html");
+    });
+  </script>
+  <!-- end import footer -->
+  </div>
+  </div>
+  </div>
+
 
 
 </body>
