@@ -47,9 +47,13 @@ body {
     text-align: center;
 }
 
+
 .trick {
     list-style-type: none;
+   
 }
+
+
 
 .card {
     background-color: #474b4f;
@@ -122,8 +126,7 @@ a:hover {
     font-size: 30px;
     line-height: 1.7;
     padding-left: 0.5rem;
-
-  
+ 
 }
 
 

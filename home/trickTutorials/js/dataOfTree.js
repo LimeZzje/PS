@@ -76,8 +76,8 @@ var treeViewData = [{
                 },
                 {
                     id: "1_2_10",
-                    text: "Thumbaround Extendet",
-                    name: "Thumbaround+Extendet",
+                    text: "Thumbaround Extended",
+                    name: "Thumbaround+Extended",
 
                 }, {
                     id: "1_2_11",
