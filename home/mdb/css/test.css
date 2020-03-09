@@ -11,11 +11,27 @@
       footer.page-footer {
         background-color: #34456a;
       }
+      
+      .heading{
+        font-size: 65px;
+      }
+
+      .underHeading{
+        font-size: 40px;
+      }
 
       @media only screen and (max-width: 768px) {
         .navbar {
           background-color: #34456a;
         }
+      }
+
+      .heading{
+        font-size: 45px;
+      }
+
+      .underHeading{
+        font-size: 20px;
       }
 
       /* Necessary for full page carousel*/

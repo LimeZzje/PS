@@ -26,12 +26,14 @@ function generateBreakdown() {
             buildResult(currentTrick);
         }
         var findNextTrick = tricks.find(function (element) {
-            if (element.TrickName === "Thumbaround") {
-                if(currentTrick.PenBack === true && currentTrick.PenPalm === false){
-                    return element
-                } 
+            if (element.diffEndPos) {
+                !element.PenPalm;
+                !element.PenBack;
             }
-            if (element.anfPos === currentTrick.endPos) {
+            if (element.anfPos === currentTrick.endPos &&
+                element.clockwise === currentTrick.clockwise 
+               ) {
+
                 return element;
             }
 
