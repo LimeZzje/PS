@@ -136,6 +136,7 @@ a:hover {
 
 .icon {
     background-color: white;
+
 }
 
 
@@ -174,7 +175,7 @@ a:hover {
     .firstCards{
         margin: 0 auto;
         width: 100%;
-        margin-bottom: 7rem;
+        padding-bottom: 2rem;
     }
 
     .FAQuestion {
@@ -182,10 +183,9 @@ a:hover {
     }
 
     .p-3 {
-        padding-bottom: 4rem !important;
+        padding-bottom: 6rem !important;
     }
 
-   
 
 
 
