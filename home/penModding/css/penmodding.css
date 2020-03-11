@@ -23,6 +23,12 @@ body {
   
 }
 
+.sameSize{
+  width: 200px;
+ 
+}
+
+
 #cards .card-text:hover{
   color: #86c232 ;
   
@@ -62,12 +68,6 @@ body {
   border: 1px solid #ffca28;
 }
 
-
-
-.controls-top{
-
-}
-
 .carousel-indicators{
  padding-bottom: 3rem; 
 }
@@ -82,12 +82,15 @@ body {
 }
 
 #modtypebuttons{
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
 }
 
 #searchWrapper{
-  width: 50%;
+  width: 65% !important;
+
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;

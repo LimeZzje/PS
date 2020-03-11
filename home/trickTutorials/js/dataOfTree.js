@@ -52,7 +52,7 @@ var treeViewData = [{
                     name: "Neosoinc",
                 }, {
                     id: "1_2_4",
-                    text: "Inverse Soinc",
+                    text: "Inverse Sonic",
                     name: "Inverse+Sonic",
                 }, {
                     id: "1_2_5",

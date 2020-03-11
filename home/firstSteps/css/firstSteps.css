@@ -45,11 +45,13 @@ body {
 
 .underHeading {
     text-align: center;
+    font-size: 30px;
 }
 
 
 .trick {
     list-style-type: none;
+    padding: 0.5rem;
 
 }
 
@@ -172,7 +174,8 @@ a:hover {
     .firstHeader {
         font-size: 18px;
     }
-    .firstCards{
+
+    .firstCards {
         margin: 0 auto;
         width: 100%;
         padding-bottom: 2rem;
@@ -186,6 +189,9 @@ a:hover {
         padding-bottom: 6rem !important;
     }
 
+    .underHeading{
+        font-size: 20px;
+    }
 
 
 

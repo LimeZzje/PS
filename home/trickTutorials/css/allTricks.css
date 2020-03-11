@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+.centertricks{
+  margin: auto;
+  width: 50%;
 
+}
 
 #trickContainer{
-float : right;
-padding-right: 10%;
+margin: 0 auto;
 }
 
 #linkContainer{
   float: left;
-  padding-left: 10%
 }
 
 .trickWrapper{
   padding: 1rem;
   flex: 1 0 50%;
+
+}
+
+.display-4{
+  font-size: 40px !important;
 }
 
 .list-group-item{
@@ -25,6 +32,7 @@ padding-right: 10%;
 iframe{
   max-width: 100%;
   border: 2px solid white;
+  padding: 0;
 }
 
 .lead{
@@ -45,14 +53,25 @@ iframe{
   color: white;
   font-size: 16px;
   font-family: 'poppins-bold', sans-serif !important;
+  padding: 0.5rem;
+  font-size: 20px;
+}
+.dx-treeview-item:hover{
+color: #86c232;
 }
 
-#trickWrapper{
-  background-color: #388087 !important;
-}
+.dx-treeview-item:active{
+  background-color: #86c232;
+  }
 
 #disclaimerUl{
 display: none;
+text-align: center;
+}
+
+hr{
+  background-color: white;
+  width: 90%;
 }
 
 
@@ -60,6 +79,12 @@ display: none;
   .social a {
     font-size: 4em;
     padding: 2em;
+  }
+
+  .centertricks{
+    width: 100%;
+    padding-left: 15%;
+  
   }
 
   }
