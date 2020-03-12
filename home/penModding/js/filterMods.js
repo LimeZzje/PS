@@ -48,6 +48,13 @@ function createCards() {
 
   listOfMods = JSON.parse(penmods);
 
+  listOfMods.mods.sort(function (a, b) {
+    a = a.name.toLowerCase();
+    b = b.name.toLowerCase();
+
+    return a < b ? -1 : a > b ? 1 : 0;
+  });
+
 
   var cardGroup = document.createElement("div");
   cardGroup.className = "card-group";
@@ -95,14 +102,24 @@ function createCards() {
 
 }
 
-function searchMods(){
-  
+function searchMods() {
+
   document.getElementById("cards").innerHTML = "";
 
   listOfMods = JSON.parse(penmods);
   var searchValue = document.getElementById("searchBar").value;
 
-  if(searchValue === ""){
+  if (searchValue === "") {
+
+    listOfMods = JSON.parse(penmods);
+
+    listOfMods.mods.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+
     searchValue = document.getElementById("searchBarMain").value;
   }
 
@@ -156,66 +173,205 @@ function searchMods(){
       cardGroup.className = "card-group";
     }
   }
-
-  console.log("done");
 }
 
 function filterDC() {
 
-  var singleCap = Array.from(document.getElementsByClassName("sc"));
-  var writeable = Array.from(document.getElementsByClassName("write"));
-  var penCategory = singleCap.concat(writeable);
+  document.getElementById("cards").innerHTML = "";
+  listOfMods = JSON.parse(penmods);
 
-  var mods = document.getElementsByClassName(penCategory);
+  var listOfFindings = [];
+  Array.prototype.forEach.call(listOfMods.mods, function (mod) {
+    if (mod.type === "dc") {
+      listOfFindings.push(mod);
 
-  Array.prototype.forEach.call(penCategory, function (mod) {
-
-    if (mod.parentNode.parentNode.parentNode.style.display === "none") {
-      mod.parentNode.parentNode.parentNode.style.display = "";
-    } else {
-      mod.parentNode.parentNode.parentNode.style.display = "none";
     }
 
+    listOfFindings.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+
   });
+
+
+  var cardGroup = document.createElement("div");
+  cardGroup.className = "card-group";
+  for (var i = 0; i < listOfFindings.length; i++) {
+
+    var card = document.createElement("div");
+    card.className = "card";
+
+    var link = document.createElement("a");
+    link.setAttribute("href", listOfFindings[i].link);
+
+    var cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+
+    var pName = document.createElement("p");
+    pName.className = "card-text";
+    pName.innerHTML = listOfFindings[i].name;
+
+    var img = document.createElement("img");
+    img.setAttribute("src", listOfFindings[i].pic);
+    img.setAttribute("alt", "Card Image")
+
+    var cardBody2 = document.createElement("div");
+    cardBody2.className = "card-body";
+
+    var pText = document.createElement("p");
+    pText.className = "card-text";
+    pText.innerHTML = listOfFindings[i].text;
+
+    cardGroup.appendChild(card)
+      .appendChild(link)
+      .appendChild(cardBody)
+      .appendChild(pName)
+      .parentNode.insertBefore(img, pName.nextSibling)
+      .parentNode.insertBefore(cardBody2, img.nextSibling)
+      .parentNode.insertBefore(pText, cardBody2.nextSibling);
+
+    if (cardGroup.childElementCount % 5 == 0 || i == listOfFindings.length - 1) {
+
+      document.getElementById("cards").appendChild(cardGroup);
+      var cardGroup = document.createElement("div");
+      cardGroup.className = "card-group";
+    }
+  }
+
 
 }
 
 function filterSC() {
 
-  var singleCap = Array.from(document.getElementsByClassName("dc"));
-  var writeable = Array.from(document.getElementsByClassName("write"));
-  var penCategory = singleCap.concat(writeable);
+  document.getElementById("cards").innerHTML = "";
+  listOfMods = JSON.parse(penmods);
 
-  var mods = document.getElementsByClassName(penCategory);
+  var listOfFindings = [];
+  Array.prototype.forEach.call(listOfMods.mods, function (mod) {
+    if (mod.type === "sc") {
+      listOfFindings.push(mod);
 
-  Array.prototype.forEach.call(penCategory, function (mod) {
-
-    if (mod.parentNode.parentNode.parentNode.style.display === "none") {
-      mod.parentNode.parentNode.parentNode.style.display = "";
-    } else {
-      mod.parentNode.parentNode.parentNode.style.display = "none";
     }
 
+    listOfFindings.sort(function (a, b) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
+
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
+
   });
+
+
+  var cardGroup = document.createElement("div");
+  cardGroup.className = "card-group";
+  for (var i = 0; i < listOfFindings.length; i++) {
+
+    var card = document.createElement("div");
+    card.className = "card";
+
+    var link = document.createElement("a");
+    link.setAttribute("href", listOfFindings[i].link);
+
+    var cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+
+    var pName = document.createElement("p");
+    pName.className = "card-text";
+    pName.innerHTML = listOfFindings[i].name;
+
+    var img = document.createElement("img");
+    img.setAttribute("src", listOfFindings[i].pic);
+    img.setAttribute("alt", "Card Image")
+
+    var cardBody2 = document.createElement("div");
+    cardBody2.className = "card-body";
+
+    var pText = document.createElement("p");
+    pText.className = "card-text";
+    pText.innerHTML = listOfFindings[i].text;
+
+    cardGroup.appendChild(card)
+      .appendChild(link)
+      .appendChild(cardBody)
+      .appendChild(pName)
+      .parentNode.insertBefore(img, pName.nextSibling)
+      .parentNode.insertBefore(cardBody2, img.nextSibling)
+      .parentNode.insertBefore(pText, cardBody2.nextSibling);
+
+    if (cardGroup.childElementCount % 5 == 0 || i == listOfFindings.length - 1) {
+
+      document.getElementById("cards").appendChild(cardGroup);
+      var cardGroup = document.createElement("div");
+      cardGroup.className = "card-group";
+    }
+  }
 
 }
 
-function filterWrite() {
+function showAllMods() {
 
-  var singleCap = Array.from(document.getElementsByClassName("sc"));
-  var writeable = Array.from(document.getElementsByClassName("dc"));
-  var penCategory = singleCap.concat(writeable);
+  document.getElementById("cards").innerHTML = "";
 
-  var mods = document.getElementsByClassName(penCategory);
 
-  Array.prototype.forEach.call(penCategory, function (mod) {
+  listOfMods = JSON.parse(penmods);
 
-    if (mod.parentNode.parentNode.parentNode.style.display === "none") {
-      mod.parentNode.parentNode.parentNode.style.display = "";
-    } else {
-      mod.parentNode.parentNode.parentNode.style.display = "none";
-    }
+  listOfMods.mods.sort(function (a, b) {
+    a = a.name.toLowerCase();
+    b = b.name.toLowerCase();
 
+    return a < b ? -1 : a > b ? 1 : 0;
   });
+
+  var listOfFindings = [];
+
+  listOfFindings = listOfMods;
+
+  var cardGroup = document.createElement("div");
+  cardGroup.className = "card-group";
+  for (var i = 0; i < listOfFindings.mods.length; i++) {
+
+    var card = document.createElement("div");
+    card.className = "card";
+
+    var link = document.createElement("a");
+    link.setAttribute("href", listOfFindings.mods[i].link);
+
+    var cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+
+    var pName = document.createElement("p");
+    pName.className = "card-text";
+    pName.innerHTML = listOfFindings.mods[i].name;
+
+    var img = document.createElement("img");
+    img.setAttribute("src", listOfFindings.mods[i].pic);
+    img.setAttribute("alt", "Card Image")
+
+    var cardBody2 = document.createElement("div");
+    cardBody2.className = "card-body";
+
+    var pText = document.createElement("p");
+    pText.className = "card-text";
+    pText.innerHTML = listOfFindings.mods[i].text;
+
+    cardGroup.appendChild(card)
+      .appendChild(link)
+      .appendChild(cardBody)
+      .appendChild(pName)
+      .parentNode.insertBefore(img, pName.nextSibling)
+      .parentNode.insertBefore(cardBody2, img.nextSibling)
+      .parentNode.insertBefore(pText, cardBody2.nextSibling);
+
+    if (cardGroup.childElementCount % 5 == 0 || i == listOfFindings.mods.length - 1) {
+
+      document.getElementById("cards").appendChild(cardGroup);
+      var cardGroup = document.createElement("div");
+      cardGroup.className = "card-group";
+    }
+  }
 
 }
