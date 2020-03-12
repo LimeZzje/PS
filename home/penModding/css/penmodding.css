@@ -2,43 +2,45 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #222626;
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
 
 .card img {
   width: 100%;
   height: auto;
-  max-width:600px;
+  max-width: 600px;
   margin: auto;
 }
 
-#cards .card-group .card{
+#cards .card-group .card {
   margin: 0.5rem;
   background-color: #5a5a5a;
-  
+
 }
 
-#cards .card-text{
-  color: white ;
-  
+#cards .card-text {
+  color: white;
+
 }
 
-.sameSize{
+.sameSize {
   width: 200px;
- 
+
 }
 
 
-#cards .card-text:hover{
-  color: #86c232 ;
-  
+#cards .card-text:hover {
+  color: #86c232;
+
 }
 
-#cards img{ 
+#cards img {
   border: 1px solid white;
 }
 
-#cards .card-body{
+#cards .card-body {
   text-align: center;
 }
 
@@ -68,27 +70,59 @@ body {
   border: 1px solid #ffca28;
 }
 
-.carousel-indicators{
- padding-bottom: 3rem; 
+.carousel-indicators {
+  padding-bottom: 3rem;
 }
 
-.carousel-item .card{
+.arrowContainer {
+
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 30px;
+}
+
+.fa-chevron-right {
+  padding-left: 4px;
+}
+
+.fa-chevron-left {
+  padding-right: 4px;
+}
+
+.controls-top{
+  padding-bottom: 1rem;
+}
+
+.carousel-item .card {
   background-color: white;
 }
 
-.featured{
-  width: 100%;
-  height: auto;
+
+#cardCarousel{
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
-#modtypebuttons{
+.carousel-indicators{
+  margin-bottom: 5rem;
+}
+
+#modtypebuttons {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+  width: 100%;
 }
 
-#searchWrapper{
+#searchWrapper {
   width: 65% !important;
 
   margin: 0 auto;
@@ -98,8 +132,6 @@ body {
 
 }
 
-.padding{
+.padding {
   margin-top: 3rem;
 }
-
-

@@ -136,17 +136,17 @@
 
                 <!--Controls-->
                 <div class="controls-top">
-                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
-                      class="fa fa-chevron-left"></i></a>
-                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                      class="fa fa-chevron-right"></i></a>
+                  <a class="btn-floating arrowContainer" href="#multi-item-example" data-slide="prev"><i
+                      class="fa fa-chevron-left arrow"></i></a>
+                  <a class="btn-floating arrowContainer" href="#multi-item-example" data-slide="next"><i
+                      class="fa fa-chevron-right arrow"></i></a>
                 </div>
                 <!--/.Controls-->
 
 
 
                 <!--Slides-->
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner" id="cardCarousel" role="listbox">
 
                   <!--First slide-->
                   <div class="carousel-item active">
@@ -154,7 +154,7 @@
                     <div class="row">
                       <div class="col-md-4">
                         <div class="card mb-2">
-                          <img class="card-img-top featured" src="../img/sevenwatercolor.png" alt="Card image cap">
+                          <img class="card-img-top featured" src="../img/sevenwatercolor.png" alt="Card image cap" >
                           <div class="card-body">
                             <h4 class="card-title">Card title</h4>
                             <p class="card-text">Test</p>
@@ -187,6 +187,8 @@
                         </div>
                       </div>
                     </div>
+
+                    
 
                   </div>
                   <!--/.First slide-->
@@ -280,11 +282,7 @@
               <!--/.Carousel Wrapper-->
             </ul>
             <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-              <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
-              <li data-target="#multi-item-example" data-slide-to="2" class="active"></li>
-            </ol>
+           
             <!--/.Indicators-->
           </div>
 
