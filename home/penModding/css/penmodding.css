@@ -106,8 +106,14 @@ body {
 
 
 #cardCarousel{
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+}
+
+.featured{
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .carousel-indicators{
@@ -119,7 +125,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
-  width: 100%;
+ 
 }
 
 #searchWrapper {
@@ -128,10 +134,21 @@ body {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-
-
 }
 
 .padding {
   margin-top: 3rem;
+}
+
+#basic-text1{
+  color: white !important;
+}
+
+@media (max-width: 992px) {
+
+  #button-wrapper{
+ text-align: center;
+
+  }
+
 }
