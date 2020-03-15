@@ -571,6 +571,7 @@ var tricks = [
         PenBack: true,
         clockwise: false,
         diffEndPos: true,
+        
     },
 
     //Angel Sonic rev?
@@ -636,7 +637,7 @@ var tricks = [
     },
 
     //PN -> PD
-    {
+    /* {
         TrickName: "(Palm Down) Pass",
         anfPos: 34,
         endPos: 23,
@@ -678,6 +679,6 @@ var tricks = [
         PenPalm: true,
         PenBack: true,
         clockwise: true,
-    }
+    } */
 
 ];

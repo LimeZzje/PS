@@ -18,23 +18,39 @@ function buildResult(trick) {
 function generateBreakdown() {
     document.getElementById("breakdown").innerHTML = "";
 
+    var currentPenBackhand;
+    var currentPD;
+
     var currentTrick;
     for (var i = 0; i < 5; i++) {
         shuffle(tricks);
+
         if (i == 0) {
             currentTrick = tricks[0];
             buildResult(currentTrick);
-        }
-        var findNextTrick = tricks.find(function (element) {
-            if (element.diffEndPos) {
-                !element.PenPalm;
-                !element.PenBack;
+            if (currentTrick.PenBack) {
+                currentPenBackhand = true;
+            } else {
+                currentPenBackhand = false;
             }
-            if (element.anfPos === currentTrick.endPos &&
-                element.clockwise === currentTrick.clockwise 
-               ) {
+        }
 
-                return element;
+        if (currentTrick.diffEndPos) {
+            if (currentPenBackhand) {
+                currentPenBackhand = false;
+            } else {
+                currentPenBackhand = true
+            }
+        }
+
+        var findNextTrick = tricks.find(function (nextTrick) {
+
+            if (currentTrick.endPos === nextTrick.anfPos &&
+                currentTrick.clockwise === nextTrick.clockwise &&
+                ( currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm )
+            ) {
+
+                return nextTrick;
             }
 
         });
