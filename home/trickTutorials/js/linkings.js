@@ -28,20 +28,29 @@ var linkings = [{
             items: [{
                 id: "1_3_1",
                     text: "Xelphire's Intermediate Linkings",
-                    name: "XelphirePS Intermediate Linkage #1",                                 },
+                    name: "XelphirePS Intermediate Linkage #1",                                 
+                },
             ]
 
         },
         {
             id: "1_4",
             text: "Advanced",
-            items: [
+            items: [{
+                id: "1_4_1",
+                    text: "Xelphire's Advanced Linkings",
+                    name: "XelphirePS Advanced Linkage #1",                                 
+                },
             ]
         }, {
             id: "1_5",
             text: "Expert",
             items: [
-
+                {
+                    id: "1_5_1",
+                        text: "Xelphire's Expert Linkings",
+                        name: "XelphirePS Expert Linkage #1",                                 
+                    },
             ]
         }, 
         {

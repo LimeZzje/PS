@@ -4,56 +4,83 @@ var tricks = [
 
     //Thumbaround variationen
     {
-        TrickName: "Thumbaround > Thumbaround reverse",
+        TrickName: "Thumbaround",
+        anfPos: 12,
+        endPos: "TF",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: false,
+        diffEndPos: true,
+
+    },
+
+    {
+        TrickName: "Thumbaround",
+        anfPos: 23,
+        endPos: "TF",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: false,
+        diffEndPos: true,
+
+    },
+
+    {
+        TrickName: "Pass rev",
         anfPos: 12,
         endPos: 23,
         PalmDown: true,
         PalmNormal: true,
-        PenPalm: false,
+        PenPalm: true,
         PenBack: true,
         clockwise: false,
-        diffEndPos: false,
+        diffEndPos: true,
 
     },
 
     {
-        TrickName: "Thumbaround > Thumbaround reverse",
-        anfPos: 12,
-        endPos: 12,
+        TrickName: "Pass rev",
+        anfPos: 23,
+        endPos: 34,
         PalmDown: true,
         PalmNormal: true,
-        PenPalm: false,
+        PenPalm: true,
         PenBack: true,
         clockwise: false,
-        diffEndPos: false,
+        diffEndPos: true,
 
     },
 
     {
-        TrickName: "Thumbaround > Thumbaround reverse",
-        anfPos: 23,
+        TrickName: "Pass rev",
+        anfPos: 34,
         endPos: 23,
         PalmDown: true,
         PalmNormal: true,
-        PenPalm: false,
+        PenPalm: true,
         PenBack: true,
         clockwise: false,
-        diffEndPos: false,
+        diffEndPos: true,
 
     },
 
     {
-        TrickName: "Thumbaround > Thumbaround reverse",
+        TrickName: "Pass rev",
         anfPos: 23,
         endPos: 12,
         PalmDown: true,
         PalmNormal: true,
-        PenPalm: false,
+        PenPalm: true,
         PenBack: true,
         clockwise: false,
-        diffEndPos: false,
+        diffEndPos: true,
 
     },
+
 
     {
         TrickName: "Pass",
@@ -151,10 +178,12 @@ var tricks = [
         diffEndPos: false,
 
     },
+
+    /*
     {
         TrickName: "Infinity",
         anfPos: 12,
-        endPos: 12,
+        endPos: "T1",
         PalmDown: true,
         PalmNormal: true,
         PenPalm: true,
@@ -166,7 +195,7 @@ var tricks = [
     {
         TrickName: "Infinity",
         anfPos: 23,
-        endPos: 23,
+        endPos: "T1",
         PalmDown: true,
         PalmNormal: true,
         PenPalm: true,
@@ -175,18 +204,9 @@ var tricks = [
         diffEndPos: false,
 
     },
-    {
-        TrickName: "Infinity",
-        anfPos: 34,
-        endPos: 34,
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: true,
-        PenBack: false,
-        clockwise: false,
-        diffEndPos: false,
 
-    },
+*/
+
 
     // Infinity Rev // Todo
     // Chrage? // Todo
@@ -372,54 +392,85 @@ var tricks = [
 
     },
 
-    // Fingerless Thumbaround // Todo
-    /* Todo
-        {
-            TrickName: "Neosonic",
-            anfPos: 12,
-            endPos: T1,
-            PalmDown: true,
-            PalmNormal: true,
-            PenPalm: false,
-            PenBack: true,
-            clockwise: true,
-        },
+    {
+        TrickName: "Fingerless Thumbaround",
+        anfPos: "TF",
+        endPos: "TF",
+        PalmDown: false,
+        PalmNormal: true,
+        PenPalm: true,
+        PenBack: false,
+        clockwise: false,
+        diffEndPos: true,
 
-        {
-            TrickName: "Neosonic",
-            anfPos: 23,
-            endPos: T2,
-            PalmDown: true,
-            PalmNormal: true,
-            PenPalm: false,
-            PenBack: true,
-            clockwise: true,
-        },
+    },
 
-        {
-            TrickName: "Neosonic",
-            anfPos: 34,
-            endPos: T3,
-            PalmDown: true,
-            PalmNormal: true,
-            PenPalm: false,
-            PenBack: true,
-            clockwise: true,
-        },
-   
     {
         TrickName: "Neosonic",
         anfPos: 12,
-        endPos: T1,
+        endPos: "T1",
         PalmDown: true,
         PalmNormal: true,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
     },
-     */
 
-    //Scissor Spin // Todo
+    {
+        TrickName: "Neosonic",
+        anfPos: 23,
+        endPos: "T2",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
+    },
+
+    {
+        TrickName: "Neosonic",
+        anfPos: 34,
+        endPos: "T3",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
+    },
+
+    {
+        TrickName: "Neosonic",
+        anfPos: 12,
+        endPos: "T1",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
+    },
+
+    {
+        TrickName: "Scissor Spin",
+        anfPos: 12,
+        endPos: "TF",
+        PalmDown: false,
+        PalmNormal: true,
+        PenPalm: true,
+        PenBack: false,
+        clockwise: false,
+    },
+
+    {
+        TrickName: "Scissor Spin",
+        anfPos: 23,
+        endPos: "TF",
+        PalmDown: false,
+        PalmNormal: true,
+        PenPalm: true,
+        PenBack: false,
+        clockwise: false,
+    },
+   
 
     {
         TrickName: "Thumbaround extended",
@@ -446,18 +497,6 @@ var tricks = [
 
     },
 
-    {
-        TrickName: "Thumbaround extended",
-        anfPos: 34,
-        endPos: 12,
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: false,
-        PenBack: true,
-        clockwise: false,
-        diffEndPos: false,
-
-    },
 
     {
         TrickName: "Neobackaround",
@@ -569,12 +608,23 @@ var tricks = [
         PalmNormal: true,
         PenPalm: true,
         PenBack: true,
-        clockwise: false,
+        clockwise: true,
         diffEndPos: true,
-        
+
     },
 
-    //Angel Sonic rev?
+    {
+        TrickName: "Angels Sonic rev",
+        anfPos: 12,
+        endPos: 34,
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: true,
+        PenBack: true,
+        clockwise: false,
+        diffEndPos: true,
+
+    },
 
     {
         TrickName: "Flush Sonic",
@@ -604,7 +654,7 @@ var tricks = [
     // ++++++++++++++++++++++++++Palm Changes+++++++++++++++++++++++
 
     //PD -> PN
-
+ /*
     {
         TrickName: "(Palm Normal) Neosoinc rev ",
         anfPos: 12,
@@ -637,7 +687,7 @@ var tricks = [
     },
 
     //PN -> PD
-    /* {
+    {
         TrickName: "(Palm Down) Pass",
         anfPos: 34,
         endPos: 23,
