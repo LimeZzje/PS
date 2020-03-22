@@ -15,19 +15,85 @@ function buildResult(trick) {
     mydiv.appendChild(document.createTextNode(trick.TrickName + " " + trick.anfPos + "-" + trick.endPos + " > "));
 }
 
-function generateBreakdown() {
+function generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks) {
+
+    return Math.floor((numOfBaseTricks / 10 * 100 - numOfBaseTricks) / numOfPrioTricks);
+}
+
+function buildListOfTricks(listOfTricks, factor, prioTrickList) {
+
+var returningList = listOfTricks;
+
+    for (var i = 0; i < factor; i++) {
+     
+        returningList = returningList.concat(prioTrickList);
+    };
+
+    return returningList;
+
+}
+
+function generateBreakdown(difficulty) {
     document.getElementById("breakdown").innerHTML = "";
 
     var currentPenBackhand;
+    var currentRotationClockwise;
     var currentPD;
+
+    var listOfTricks;
+    var factorOfIterations;
+
+    factorOfIterations = 0;
+
+    switch (difficulty.value) {
+        case "beginner":
+            listOfTricks = beginnerTricks;
+            break;
+
+        case "intermediate":
+            listOfTricks = beginnerTricks;
+            var numOfBaseTricks = beginnerTricks.length;
+            var numOfPrioTricks = intermediateTricks.length;
+
+            var factorOfIterations = generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks);
+
+            listOfTricks =  buildListOfTricks(listOfTricks, factorOfIterations, intermediateTricks)
+
+            break;
+
+        case "advanced":
+            listOfTricks = beginnerTricks.concat(intermediateTricks);
+            var numOfBaseTricks = beginnerTricks.length + intermediateTricks.length;
+            var numOfPrioTricks = advancedTricks.length;
+
+            var factorOfIterations = generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks);
+            listOfTricks = buildListOfTricks(listOfTricks, factorOfIterations, advancedTricks)
+
+            break;
+
+        case "expert":
+            listOfTricks = beginnerTricks.concat(intermediateTricks, advancedTricks);
+
+            var numOfBaseTricks = beginnerTricks.length + intermediateTricks.length + advancedTricks.length;
+            var numOfPrioTricks = expertTricks.length;
+
+            var factorOfIterations = generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks);
+            listOfTricks = buildListOfTricks(listOfTricks, factorOfIterations, expertTricks)
+
+            break;
+        default:
+
+        listOfTricks = beginnerTricks.concat(intermediateTricks, advancedTricks, expertTricks);
+    };
 
     var currentTrick;
     for (var i = 0; i < 5; i++) {
-        shuffle(tricks);
+        shuffle(listOfTricks);
 
         if (i == 0) {
-            currentTrick = tricks[0];
+            currentTrick = listOfTricks[0];
             buildResult(currentTrick);
+
             if (currentTrick.PenBack) {
                 currentPenBackhand = true;
             } else {
@@ -43,11 +109,18 @@ function generateBreakdown() {
             }
         }
 
-        var findNextTrick = tricks.find(function (nextTrick) {
+        if (currentTrick.changeRotation) {
+            currentRotationClockwise = !currentTrick.clockwise;
+        } else {
+            currentRotationClockwise = currentTrick.clockwise;
+        }
+
+        var findNextTrick = listOfTricks.find(function (nextTrick) {
 
             if (currentTrick.endPos === nextTrick.anfPos &&
-                currentTrick.clockwise === nextTrick.clockwise &&
-                ( currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm )
+                currentRotationClockwise === nextTrick.clockwise &&
+                (currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm)
+
             ) {
 
                 return nextTrick;
@@ -55,7 +128,7 @@ function generateBreakdown() {
 
         });
 
-        shuffle(tricks);
+        shuffle(listOfTricks);
         buildResult(findNextTrick);
         currentTrick = findNextTrick;
     }

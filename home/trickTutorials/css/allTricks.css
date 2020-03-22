@@ -65,8 +65,9 @@ color: #86c232;
   }
 
 #disclaimerUl{
-display: none;
 text-align: center;
+margin-top: 3rem;
+margin-bottom: 1rem;
 }
 
 hr{
@@ -74,6 +75,9 @@ hr{
   width: 90%;
 }
 
+#underline{
+  text-decoration-color: red !important;
+}
 
 @media (max-width: 992px) {
   .social a {

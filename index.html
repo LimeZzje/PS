@@ -17,7 +17,11 @@
   <!--<link rel="stylesheet" type="text/css" href="../css/sidebar.css" /> -->
 
   <script src="./home/index/breakdownGenerator.js"></script>
-  <script src="./home/index/breakdownTricks.js"></script>
+  <script src="./home/index/beginnerTricks.js"></script>
+  <script src="./home/index/intermediateTricks.js"></script>
+  <script src="./home/index/advancedTricks.js"></script>
+  <script src="./home/index/expertTricks.js"></script>
+
 
 
 
@@ -230,7 +234,14 @@
             <p id="breakdown">
 
             </p>
-            <button href="#" class="btn btn-primary" onclick="generateBreakdown()">Generate a Breakdown</button>
+            <button class="btn btn-primary" onclick="generateBreakdown(this)" value="beginner">Beginner</button>
+            <button class="btn btn-primary" onclick="generateBreakdown(this)" value="intermediate">Intermediate</button>
+            <button class="btn btn-primary" onclick="generateBreakdown(this)" value="advanced">Advanced</button>
+            <button class="btn btn-primary" onclick="generateBreakdown(this)" value="expert">Expert</button>
+            <button class="btn btn-primary" onclick="generateBreakdown(this)" value="random">Random</button>
+
+
+
         </div>
 
 
@@ -249,7 +260,7 @@
 </div>
 </figure>
 -->
-<!--- Emoji Section -->
+<!--- Emoji Section
 <button class="fun" data-toggle="collapse" data-target="#emoji">click for fun</button>
 <div id="emoji" class="collapse">
     <div class="container-fluid padding">
@@ -271,7 +282,7 @@
     </div>
 </div>
 
-
+ -->
 <!--- Meet the team -->
 
 <!--- Cards -->
@@ -345,12 +356,7 @@
 
   </div>
 
-  <script>
-    $(function () {
-      $("#footer").load("./home/global/fragments/footer.html");
-    });
-  </script>
-  <!-- end import footer -->
+
   </div>
   </div>
   </div>

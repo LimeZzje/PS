@@ -64,11 +64,7 @@ var tricks = [{
                     text: "Warped Sonic",
                     name: "Warped+Sonic",
 
-                }, {
-                    id: "1_2_8",
-                    text: "Sonic Moonwalk",
-                    name: "Sonic+Moonwalk",
-                }, {
+                },  {
                     id: "1_2_9",
                     text: "Double Charge",
                     name: "Double+Charge",
@@ -76,8 +72,8 @@ var tricks = [{
                 },
                 {
                     id: "1_2_10",
-                    text: "Thumbaround Extendet",
-                    name: "Thumbaround+Extendet",
+                    text: "Thumbaround Extended",
+                    name: "Thumbaround+Extended",
 
                 }, {
                     id: "1_2_11",
@@ -100,6 +96,12 @@ var tricks = [{
                     id: "1_2_17",
                     text: "Backaround",
                     name: "Backaround",
+                },
+                {
+                    id: "1_3_1",
+                    text: "Middlebackaround",
+                    name: "Middlebackaround",
+
                 },
                 {
                     id: "1_2_21",
@@ -171,18 +173,20 @@ var tricks = [{
                     text: "Shadow",
                     name: "Shadow",
                 },
+                {
+                    id: "1_2_15",
+                    text: "Middlearound",
+                    name: "Middlearound",
+
+                },
+               
             ]
 
         },
         {
             id: "1_3",
             text: "Intermediate",
-            items: [{
-                    id: "1_3_1",
-                    text: "Middlebackaround",
-                    name: "Middlebackaround",
-
-                },
+            items: [
                 {
                     id: "1_3_2",
                     text: "Ringbackaround",
@@ -191,11 +195,6 @@ var tricks = [{
                     id: "1_3_4",
                     text: "Pinkybackaround",
                     name: "Pinkybackaround",
-                }, {
-                    id: "1_2_15",
-                    text: "Middlearound",
-                    name: "Middlearound",
-
                 },
                 {
                     id: "1_3_3",
