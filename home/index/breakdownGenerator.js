@@ -9,10 +9,23 @@ function shuffle(a) {
     return a;
 }
 
-function buildResult(trick) {
+function buildResult(trick, needsTa, needsPalmNotation) {
     var mydiv = document.getElementById("breakdown");
 
-    mydiv.appendChild(document.createTextNode(trick.TrickName + " " + trick.anfPos + "-" + trick.endPos + " > "));
+    if (needsTa) {
+        mydiv.appendChild(document.createTextNode("TA > " + trick.TrickName + " " + trick.anfPos + "-" + trick.endPos + " > "));
+    } else if (trick.hybrid && !needsPalmNotation) {
+        mydiv.appendChild(document.createTextNode(trick.TrickName + " " + " > "));
+    } else if (trick.hybrid && needsPalmNotation) {
+        mydiv.appendChild(document.createTextNode("(PS) " + trick.TrickName + " " + " > "));
+
+    } else if (!trick.hyrbid && needsPalmNotation) {
+        mydiv.appendChild(document.createTextNode("(PS) " + trick.TrickName + " " + trick.anfPos + "-" + trick.endPos + " > "));
+
+    } else {
+        mydiv.appendChild(document.createTextNode(trick.TrickName + " " + trick.anfPos + "-" + trick.endPos + " > "));
+
+    }
 }
 
 function generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks) {
@@ -22,10 +35,10 @@ function generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks) {
 
 function buildListOfTricks(listOfTricks, factor, prioTrickList) {
 
-var returningList = listOfTricks;
+    var returningList = listOfTricks;
 
     for (var i = 0; i < factor; i++) {
-     
+
         returningList = returningList.concat(prioTrickList);
     };
 
@@ -57,7 +70,7 @@ function generateBreakdown(difficulty) {
 
             var factorOfIterations = generateFactorOfIterations(numOfBaseTricks, numOfPrioTricks);
 
-            listOfTricks =  buildListOfTricks(listOfTricks, factorOfIterations, intermediateTricks)
+            listOfTricks = buildListOfTricks(listOfTricks, factorOfIterations, intermediateTricks)
 
             break;
 
@@ -83,7 +96,7 @@ function generateBreakdown(difficulty) {
             break;
         default:
 
-        listOfTricks = beginnerTricks.concat(intermediateTricks, advancedTricks, expertTricks);
+            listOfTricks = beginnerTricks.concat(intermediateTricks, advancedTricks, expertTricks);
     };
 
     var currentTrick;
@@ -92,15 +105,20 @@ function generateBreakdown(difficulty) {
 
         if (i == 0) {
             currentTrick = listOfTricks[0];
-            buildResult(currentTrick);
 
+            if (currentTrick.needsTA || currentTrick.needsTA === null) {
+                buildResult(currentTrick, true, false);
+            } else if (currentTrick.PalmNormal && currentTrick.PalmDown) {
+                buildResult(currentTrick, false, true);
+            } else {
+                buildResult(currentTrick);
+            }
             if (currentTrick.PenBack) {
                 currentPenBackhand = true;
             } else {
                 currentPenBackhand = false;
             }
         }
-
         if (currentTrick.diffEndPos) {
             if (currentPenBackhand) {
                 currentPenBackhand = false;
@@ -117,15 +135,26 @@ function generateBreakdown(difficulty) {
 
         var findNextTrick = listOfTricks.find(function (nextTrick) {
 
+
+            if(nextTrick.TrickName.startsWith("(PS)")){
+              nextTrick.TrickName = nextTrick.TrickName.substring(5);
+            }
+            
             if (currentTrick.endPos === nextTrick.anfPos &&
                 currentRotationClockwise === nextTrick.clockwise &&
-                (currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm)
+                (currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm)) {
+                if (nextTrick.TrickName === currentTrick.TrickName && currentTrick.anfPos === nextTrick.anfPos) {
+                        return;
+                } if(currentTrick.PalmDown && !currentTrick.PalmNormal && nextTrick.PalmNormal){
 
-            ) {
-
-                return nextTrick;
+                    nextTrick.TrickName = "(PS) " +  nextTrick.TrickName;  
+                    return nextTrick; 
+                }
+                
+                else {
+                    return nextTrick;
+                }
             }
-
         });
 
         shuffle(listOfTricks);

@@ -24,6 +24,8 @@ var expertTricks = [
     PenBack: false,
     clockwise: false,
     diffEndPos: true,
+    needsTA: true,
+
 },
 
 {
@@ -48,6 +50,7 @@ var expertTricks = [
     PenBack: false,
     clockwise: false,
     diffEndPos: true,
+    needsTA: true,
 },
 
 {
@@ -55,12 +58,29 @@ var expertTricks = [
     anfPos: 12,
     endPos: 12,
     PalmDown: true,
-    PalmNormal: true,
+    PalmNormal: false,
     PenPalm: true,
     PenBack: false,
     clockwise: false,
     diffEndPos: false,
 },
+
+// Hybrids 
+
+
+{
+    TrickName: "Flush Sonic 34-14 ~ Mirror Powerpass 2-1-TF ",
+    anfPos: 34,
+    endPos: "TF",
+    PalmDown: false,
+    PalmNormal: true,
+    PenPalm: true,
+    PenBack: false,
+    clockwise: true,
+    diffEndPos: true,
+    hybrid: true,
+},
+
 
 
     // ++++++++++++++++++++++++++Palm Changes+++++++++++++++++++++++

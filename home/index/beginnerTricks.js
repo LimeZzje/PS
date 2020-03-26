@@ -3,56 +3,33 @@
   // Fundamentals
 
     //Thumbaround variationen
-    {
-        TrickName: "Thumbaround",
-        anfPos: 12,
-        endPos: "TF",
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: false,
-        PenBack: true,
-        clockwise: false,
-        diffEndPos: true,
-
-    },
-
-    {
-        TrickName: "Thumbaround",
-        anfPos: 23,
-        endPos: "TF",
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: false,
-        PenBack: true,
-        clockwise: false,
-        diffEndPos: true,
-
-    },
-
+   
     {
         TrickName: "Thumbaround reverse",
         anfPos: "TF",
         endPos: 12,
         PalmDown: false,
-        PalmNormal: true,
-        PenPalm: true,
-        PenBack: false,
-        clockwise: true,
-        diffEndPos: true,
-
-    },
-
-
-    {
-        TrickName: "Pass rev",
-        anfPos: 12,
-        endPos: 23,
-        PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: true,
         PenBack: true,
         clockwise: false,
-        diffEndPos: true,
+        diffEndPos: false,
+        changeRotation: true,
+
+
+    },
+    {
+        TrickName: "Thumbaround reverse",
+        anfPos: "TF",
+        endPos: 23,
+        PalmDown: false,
+        PalmNormal: false,
+        PenPalm: true,
+        PenBack: true,
+        clockwise: false,
+        diffEndPos: false,
+        changeRotation: true,
+
 
     },
 
@@ -233,7 +210,7 @@
         anfPos: 12,
         endPos: 12,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -245,7 +222,7 @@
         anfPos: 23,
         endPos: 12,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -338,7 +315,7 @@
         PenPalm: false,
         PenBack: true,
         clockwise: true,
-        diffEndPos: true,
+        diffEndPos: false,
 
     },
 
@@ -351,7 +328,32 @@
         PenPalm: false,
         PenBack: true,
         clockwise: true,
-        diffEndPos: true,
+        diffEndPos: false,
+
+    },
+    {
+        TrickName: "Neosonic",
+        anfPos: 12,
+        endPos: "TF",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
+        diffEndPos: false,
+
+    },
+
+    {
+        TrickName: "Neosonic",
+        anfPos: 23,
+        endPos: "TF",
+        PalmDown: true,
+        PalmNormal: true,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
+        diffEndPos: false,
 
     },
 
@@ -364,20 +366,7 @@
         PenPalm: false,
         PenBack: true,
         clockwise: true,
-        diffEndPos: true,
-
-    },
-
-    {
-        TrickName: "Neosonic",
-        anfPos: 12,
-        endPos: "T1",
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: false,
-        PenBack: true,
-        clockwise: true,
-        diffEndPos: true,
+        diffEndPos: false,
 
     },
 
@@ -432,24 +421,14 @@
         diffEndPos: true,
     },
 
-    {
-        TrickName: "Inverse Sonic",
-        anfPos: 34,
-        endPos: 23,
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: true,
-        PenBack: true,
-        clockwise: true,
-        diffEndPos: true,
-    },
+   
 
     {
         TrickName: "Thumbspin 1.5",
         anfPos: 12,
         endPos: "TF",
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -462,7 +441,7 @@
         anfPos: 23,
         endPos: "TF",
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -501,7 +480,7 @@
         anfPos: 12,
         endPos: 12,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -513,7 +492,7 @@
         anfPos: 23,
         endPos: 23,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -526,7 +505,7 @@
         anfPos: 12,
         endPos: 12,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -539,7 +518,7 @@
         anfPos: 12,
         endPos: 23,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -552,7 +531,7 @@
         anfPos: 12,
         endPos: 34,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -565,7 +544,7 @@
         anfPos: 23,
         endPos: 12,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -578,7 +557,7 @@
         anfPos: 23,
         endPos: 23,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -591,7 +570,7 @@
         anfPos: 23,
         endPos: 34,
         PalmDown: true,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
@@ -604,7 +583,7 @@
         anfPos: 12,
         endPos: 12,
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -617,7 +596,7 @@
         anfPos: 12,
         endPos: 23,
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -630,7 +609,7 @@
         anfPos: 23,
         endPos: 12,
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -643,7 +622,7 @@
         anfPos: 23,
         endPos: 23,
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: false,
@@ -705,28 +684,30 @@
 
     },
 
-    {
-        TrickName: "Charge T1",
-        anfPos: "T1",
-        endPos: "T1",
-        PalmDown: true,
-        PalmNormal: true,
-        PenPalm: false,
-        PenBack: true,
-        clockwise: false,
-        diffEndPos: false,
-
-    },
 
     {
         TrickName: "Fingerless Thumbaround",
         anfPos: "TF",
         endPos: "TF",
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: true,
         PenBack: false,
         clockwise: false,
+        diffEndPos: true,
+
+    },
+   
+
+    {
+        TrickName: "Fingerless Thumbaround rev",
+        anfPos: "TF",
+        endPos: 12,
+        PalmDown: false,
+        PalmNormal: false,
+        PenPalm: false,
+        PenBack: true,
+        clockwise: true,
         diffEndPos: true,
 
     },
@@ -734,9 +715,9 @@
     {
         TrickName: "Fingerless Thumbaround rev",
         anfPos: "TF",
-        endPos: "TF",
+        endPos: 23,
         PalmDown: false,
-        PalmNormal: true,
+        PalmNormal: false,
         PenPalm: false,
         PenBack: true,
         clockwise: true,
