@@ -100,13 +100,16 @@ function generateBreakdown(difficulty) {
     };
 
     var currentTrick;
-    var sizeofBD = document.getElementById("bdSize").value -1;
+    var sizeofBD = document.getElementById("bdSize").value;
 
-    if(sizeofBD == ""){
-        sizeofBD = 4;
-    } 
+    if (sizeofBD == "-1") {
+        sizeofBD = 0;
+    }
+    if (sizeofBD > 50) {
+        sizeofBD = 0;
+    }
 
-    for (var i = 0; i < sizeofBD; i++) {
+    for (var i = 0; i < sizeofBD -1; i++) {
         shuffle(listOfTricks);
 
         if (i == 0) {
@@ -142,22 +145,21 @@ function generateBreakdown(difficulty) {
         var findNextTrick = listOfTricks.find(function (nextTrick) {
 
 
-            if(nextTrick.TrickName.startsWith("(PS)")){
-              nextTrick.TrickName = nextTrick.TrickName.substring(5);
+            if (nextTrick.TrickName.startsWith("(PS)")) {
+                nextTrick.TrickName = nextTrick.TrickName.substring(5);
             }
-            
+
             if (currentTrick.endPos === nextTrick.anfPos &&
                 currentRotationClockwise === nextTrick.clockwise &&
                 (currentPenBackhand === nextTrick.PenBack || !currentPenBackhand === nextTrick.PenPalm)) {
                 if (nextTrick.TrickName === currentTrick.TrickName && currentTrick.anfPos === nextTrick.anfPos) {
-                        return;
-                } if(currentTrick.PalmDown && !currentTrick.PalmNormal && nextTrick.PalmNormal){
-
-                    nextTrick.TrickName = "(PS) " +  nextTrick.TrickName;  
-                    return nextTrick; 
+                    return;
                 }
-                
-                else {
+                if (currentTrick.PalmDown && !currentTrick.PalmNormal && nextTrick.PalmNormal) {
+
+                    nextTrick.TrickName = "(PS) " + nextTrick.TrickName;
+                    return nextTrick;
+                } else {
                     return nextTrick;
                 }
             }

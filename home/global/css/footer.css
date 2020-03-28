@@ -16,9 +16,32 @@ footer a{
   color: white;
 }
 
+
 hr.light-100{
     border-top: 1px solid white;
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 1rem;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white !important;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white !important;
+
+}
+#social-wrapper .fa {
+  margin: 0.1rem;
+  padding: 20px !important;
+  font-size: 30px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+
+#social-wrapper{
+  margin: 0 auto;
 }

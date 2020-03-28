@@ -39,10 +39,7 @@
   <link rel="stylesheet" type="text/css" href="./home/mdb/css/test.css" />
   <link rel="stylesheet" type="text/css" href="./home/global/css/footer.css" />
   <link rel="stylesheet" type="text/css" href="./home/global/css/style.css" />
-
-
-
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -122,11 +119,14 @@
                   allowfullscreen>
                 </iframe>
               </li>
+              <!--            
               <li>
+               
                 <p class="font-weight-bold text-uppercase py-4">Join our awesome community on Discord</p>
                 <button href="#" class="btn btn-primary">Awesome Community Name</button>
 
               </li>
+              -->
               <!--Carousel Wrapper-->
 
               <!--/.Carousel Wrapper-->
@@ -222,21 +222,30 @@
 
 
   <!--- Two Column Section -->
+
+  <div class="container-fluid padding" id="bdheader">
+    <div class="row welcome text-center">
+      <div class="col-12">
+        <h1 class="display-4">Breakdown Generator</h1>
+        <hr>
+        <div class="col-12">
+          <p class="lead">Are you always spinning the same five linkings?</p>
+          <p class="lead">Try out the new Breakdown-Generator to get some new Ideas!</p>
+          <p class="lead">Note: You always start with the long side of the pen towards the backhand </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="container-fluid padding">
+
     <div class="row padding">
-      <div class="col-lg-6">
+      <div class="col-lg-6" id="bdWrapper">
         <div class="row">
-          <div class="col-md-6">
-            <h2>Breakdown-Generator</h2>
-            <p>Are you always spinning the same five linkings?</p>
-            <p>Try out the new Breakdown-Generator to get some new Ideas!</p>
-            <p>Note: You always start with the long side of the pen towards the backhand</p>
 
-          </div>
-          <div class="col-md-6">
-
-            <p>Legend</p>
-
+          <div>
+            <p><u>Legend</u></p>
             <ul>
               <li> ">" - Next trick</li>
               <li> "~" - Hybrid</li>
@@ -246,7 +255,8 @@
               <li> "PS" - Palm Side</li>
               <li> "PD" - Palm Down</li>
             </ul>
-            <p>Try to really understand <a href="./home/firstSteps/html/firstStepsPs.html">penspinning's notation</a>,
+            <p>Try to really understand <a href="./home/firstSteps/html/firstStepsPs.html#notationWrapper">penspinning's
+                notation</a>,
               if you have problems understanding what's going on</p>
 
           </div>
@@ -260,9 +270,12 @@
         </p>
 
         <form id="bdform" onSubmit="return false;">
-
-          <label>Select your breakdown size (between 2 and 50)</label>
+          <label id="sizeLabel">Select your breakdown size (between 2 and 50)</label>
           <input type="number" id="bdSize" class="" min="2" max="50" step="1"></input>
+
+          <script type="text/javascript">
+            document.getElementById('bdSize').value = '5';
+          </script>
 
           <div class="btn-group row " role="group" aria-label="Basic example" id="modtypebuttons">
             <div id="button-wrapper">
@@ -337,35 +350,13 @@
   <footer>
     <div class="container fluid-padding">
       <div class="row text-center">
-        <div class="col-md-4">
-          <hr class="light">
-          <h5>Creater of the site</h5>
-          <hr class="light">
-          <p>LimeZz</p>
-
-        </div>
-
-
-        <div class="col-md-4">
-          <hr class="light">
-          <h5>Collaboration with</h5>
-          <hr class="light">
-          <p>Juzzle</p>
-          <p>Letho72</p>
-          <p>Cookie</p>
-        </div>
-
-        <div class="col-md-4">
-          <hr class="light">
-          <h5>Service Area</h5>
-          <hr class="light">
-          <p>City, State, Postalcode</p>
-          <p>City, State, Postalcode</p>
-          <p>City, State, Postalcode</p>
+        <div id="social-wrapper">
+          <a href="https://www.instagram.com/limezzje" class="fa fa-instagram"></a>
+          <a href="https://www.youtube.com/channel/UC3Es6QONO5dg1chl41o6SIg" class="fa fa-youtube"></a>
         </div>
         <div class="col-12">
           <hr class="light">
-          <h5>&copy;LimeZzje</h5>
+          <h5>&copy;LimeZzje 2020</h5>
         </div>
       </div>
     </div>
