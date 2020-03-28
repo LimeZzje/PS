@@ -100,7 +100,13 @@ function generateBreakdown(difficulty) {
     };
 
     var currentTrick;
-    for (var i = 0; i < 5; i++) {
+    var sizeofBD = document.getElementById("bdSize").value -1;
+
+    if(sizeofBD == ""){
+        sizeofBD = 4;
+    } 
+
+    for (var i = 0; i < sizeofBD; i++) {
         shuffle(listOfTricks);
 
         if (i == 0) {
@@ -162,7 +168,6 @@ function generateBreakdown(difficulty) {
         currentTrick = findNextTrick;
     }
 }
-
 
 
 

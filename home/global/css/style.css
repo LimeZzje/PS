@@ -217,6 +217,11 @@ iframe{
   }
 }
 
+#button-wrapper{
+  text-align: center;
+ 
+   }
+
 @media (max-width: 576px) {
 
   .carousel-caption {

@@ -81,6 +81,18 @@ var expertTricks = [
     hybrid: true,
 },
 
+{
+    TrickName: "Inverse Shadow 23-12 ~ Neobackaround 12-34",
+    anfPos: 23,
+    endPos: 34,
+    PalmDown: false,
+    PalmNormal: true,
+    PenPalm: true,
+    PenBack: false,
+    clockwise: true,
+    diffEndPos: true,
+    hybrid: true,
+},
 
 
     // ++++++++++++++++++++++++++Palm Changes+++++++++++++++++++++++
