@@ -54,6 +54,7 @@
 
 },
 
+/*
 {
     TrickName: "Flush Sonic",
     anfPos: 23,
@@ -65,7 +66,7 @@
     clockwise: true,
     diffEndPos: false,
 },
-
+*/
 {
     TrickName: "Side Sonic",
     anfPos: 23,

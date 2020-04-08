@@ -177,6 +177,7 @@
     PenBack: true,
     clockwise: false,
     diffEndPos: true,
+    needsTA: true,
 },
 
 {

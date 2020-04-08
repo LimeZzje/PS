@@ -48,11 +48,11 @@ var tricks = [{
                     name: "Inverse+Twisted+Sonic",
                 }, {
                     id: "1_2_3",
-                    text: "Neosoinc",
-                    name: "Neosoinc",
+                    text: "Neosonic",
+                    name: "Neosonic",
                 }, {
                     id: "1_2_4",
-                    text: "Inverse Soinc",
+                    text: "Inverse Sonic",
                     name: "Inverse+Sonic",
                 }, {
                     id: "1_2_5",
@@ -284,8 +284,8 @@ var tricks = [{
 
                 }, {
                     id: "1_4_4",
-                    text: "In Out Soinc",
-                    name: "In+Out+Soinc",
+                    text: "In Out Sonic",
+                    name: "In+Out+Sonic",
                 },
                 {
                     id: "1_4_6",
